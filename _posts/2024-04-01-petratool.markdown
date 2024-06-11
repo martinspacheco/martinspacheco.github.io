@@ -5,7 +5,7 @@ date: 2024-04-01 01:00:00 +00:00
 image: /images/r_petratool.jpg
 categories: research
 author: "Nuno Miguel Martins Pacheco"
-authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Anand Vazhapilli Sureshbabu, Markus Mörtl, Markus Zimmermann, Laura Isabel Durán Noy, Masaru Charles Nürnberger, Andreas Feldl"
+authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Anand Vazhapilli Sureshbabu, Markus Zimmermann, Laura Isabel Durán Noy, Masaru Charles Nürnberger, Andreas Feldl"
 venue: "Research tool for data collection"
 website: https://www.tms.petra-prototyping.de/
 code: https://gitfront.io/r/martinspacheco/rNsFbMc4fRVb/petra-tool/
