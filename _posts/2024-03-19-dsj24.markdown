@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Learning by doing? The relationship between effort, learning effect and product quality during hackathons of novice teams"
+date: 2024-03-19 01:00:00 +00:00
+image: /images/r_dsj_hackathon.jpg
+categories: research
+author: "Nuno Miguel Martins Pacheco"
+venue: "Design Science Journal"
+authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Mara Geisler, Medina Bajramovic,Gabrielle Fu, Anand Vazhapilli Sureshbabu, Markus Mörtl and Markus Zimmermann"
+doi: https://doi.org/10.1017/dsj.2024.9
+---
+
+This article explores how novice teams participating in hackathons learn and improve product quality through effort. The main result shows that increased effort, especially during the solution phase, significantly improves product quality. Other types of effort and their correlation with product quality are insignificant. This underscores the importance of the solution phase for the resulting product quality, while the impact on learning effect needs further research.
