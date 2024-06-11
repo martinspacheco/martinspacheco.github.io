@@ -1,0 +1,13 @@
+---
+layout: post
+title: "A Behavior-Centric Concept for Engineering Education in New Product Development"
+date: 2020-08-12 01:00:00 +00:00
+image: /images/r_nd20_2.jpg
+categories: research
+author: "Nuno Miguel Martins Pacheco"
+venue: "Proceedings of NordDesign 2020"
+authors: "Jan Behrenbeck, <strong>Nuno Miguel Martins Pacheco</strong>, Bilal Tariq and Markus Zimmermann"
+doi: https://doi.org/10.35199/NORDDESIGN2020.25
+---
+
+The article introduces a ten-day makeathon course at the Technical University of Munich. The course, “Think.Make.Start.”, aims to develop engineering students’ behavioral competencies necessary for new product development and entrepreneurship. It emphasizes autonomy, teamwork, and iterative prototyping. The main findings show that the course effectively fosters desired behaviors like leveraging resources and learning from failure, though further research is needed on long-term impact and individual assessment.

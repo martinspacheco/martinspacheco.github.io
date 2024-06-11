@@ -1,0 +1,13 @@
+---
+layout: post
+title: "A Role-based Prototyping Approach for Human-Centred Design in Fuzzy Front-End Scenarios"
+date: 2020-08-12 01:00:00 +00:00
+image: /images/r_nd20.jpg
+categories: research
+author: "Nuno Miguel Martins Pacheco"
+venue: "Proceedings of NordDesign 2020"
+authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Jan Behrenbeck, Bilal Tariq, Anand Vazhapilli Sureshbabu and Markus Zimmermann"
+doi: https://doi.org/10.35199/NORDDESIGN2020.7
+---
+
+The article introduces the Role-Based Prototyping Approach (RBPA) to aid novice designers in the early stages of new product development. This methodology focuses on structured prototyping activities and role allocation within teams to manage the uncertainties and complexities of the fuzzy front-end phase. The study shows that the RBPA enhances team collaboration and increases prototyping activities, ultimately improving the efficiency and effectiveness of developing minimum viable products (MVPs).

@@ -1,0 +1,13 @@
+---
+layout: post
+title: "A Role-Based Prototyping Approach for Human-Centered Design in Industry"
+date: 2021-01-07 01:00:00 +00:00
+image: /images/r_icord21.jpg
+categories: research
+author: "Nuno Miguel Martins Pacheco"
+venue: "Proceedings of the International Conference on Research in Design"
+authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Anand Vazhapilli Sureshbabu and Markus Zimmermann"
+doi: https://doi.org/10.1007/978-981-16-0119-4_75
+---
+
+The article adapts the RBPA for industrial contexts, focusing on structured roles and prototyping phases (problem, solution, launch). Applied in a university-industry course, it improved team organization and product development. Key findings highlight the importance of early problem understanding and structured prototyping for successful product outcomes. Further research is needed to evaluate its broader applicability.
