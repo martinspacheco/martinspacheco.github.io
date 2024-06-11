@@ -2,7 +2,7 @@
 layout: post
 title: "A Fuzzy Front-End Product Development Framework for Startups"
 date: 2021-07-21 01:00:00 +00:00
-image: /images/r_iced2021_2.jpg
+image: /images/r_iced21_2.jpg
 categories: research
 author: "Nuno Miguel Martins Pacheco"
 venue: "Proceedings of the International Conference on Engineering Design"

@@ -2,7 +2,7 @@
 layout: post
 title: "What is successful prototyping? Insights from Novice Designers' Self-Evaluation of Prototyping Success"
 date: 2021-07-21 01:00:00 +00:00
-image: /images/r_iced2021.jpg
+image: /images/r_iced21.jpg
 categories: research
 author: "Nuno Miguel Martins Pacheco"
 venue: "Proceedings of the International Conference on Engineering Design"
