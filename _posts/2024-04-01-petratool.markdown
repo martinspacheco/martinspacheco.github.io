@@ -8,7 +8,7 @@ author: "Nuno Miguel Martins Pacheco"
 authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Anand Vazhapilli Sureshbabu, Markus Mörtl, Markus Zimmermann, Laura Isabel Durán Noy, Masaru Charles Nürnberger, Andreas Feldl"
 venue: "Research tool for data collection"
 website: https://www.tms.petra-prototyping.de/
-code: https://gitfront.io/r/martinspacheco/rNsFbMc4fRVb/petra-tool.git
+code: https://gitfront.io/r/martinspacheco/rNsFbMc4fRVb/petra-tool/
 
 ---
 
