@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Learning by doing"
-date:   2024-04-01 01:00:00 +00:00
+title: "Learning by doing"
+date: 2024-04-01 01:00:00 +00:00
 image: /images/black.jpg
-categories: research
+categories: private
 author: "Nuno Miguel Martins Pacheco"
 venue: "Design Science"
 authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Test 1, Test 2 & Test 3"

@@ -138,9 +138,8 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Indutry Projects</h2>
-              <p>Besides my work on the RealSense depth sensors and the publications above, a sampling of my publicly disclosed work
-              </p>
+              <h2>Industry Projects</h2>
+              <p>Test description</p>
             </td>
           </tr>
         </table>
@@ -148,7 +147,7 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'Intel' %}
+          {% if cat == 'industry' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -158,8 +157,9 @@
               <br>
               <em>{{post.categories}} {{post.course}}</em>
               <br>
-              {{ post.date | date: "%Y-%m-%d" }}
 
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              
               <br>
               {% if post.doi %}
                 <a href="{{post.doi}}">doi</a> /
@@ -203,7 +203,7 @@
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Teaching Projects</h2>
-              <p> These include coursework, side projects and unpublished research work. 
+              <p> Description of teaching projects. 
               </p>
             </td>
           </tr>
@@ -212,7 +212,7 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat != 'research' and cat != 'Intel' %}
+          {% if cat == 'teaching' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -222,7 +222,8 @@
               <br>
               <em>{{post.categories}} {{post.course}}</em>
               <br>
-              {{ post.date | date: "%Y-%m-%d" }}
+              
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
 
               <br>
               {% if post.doi %}
@@ -277,7 +278,7 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'private' %}
+          {% if cat != 'research' and cat != 'industry' and cat != 'teaching' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
