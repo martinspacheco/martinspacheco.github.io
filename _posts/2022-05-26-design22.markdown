@@ -5,11 +5,9 @@ date: 2022-05-26 01:00:00 +00:00
 image: /images/r_design2022.jpg
 categories: research
 author: "Nuno Miguel Martins Pacheco"
-venue: "International Design Conference - DESIGN 2022"
+venue: "Proceedings of the International Design Conference"
 authors: "Anand Vazhapilli Sureshbabu, <strong>Nuno Miguel Martins Pacheco</strong>, Laura Isabel Durán Noy and Markus Zimmermann"
 doi: https://doi.org/10.1017/pds.2022.255
 ---
 
 This article explores the development of a trash-picking robot together with a robotics startup with a strong emphasis on human-robot interaction (HRI). The study utilizes the double diamond process to enhance the robot’s usability and user experience.
-
-
