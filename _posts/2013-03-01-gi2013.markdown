@@ -8,7 +8,7 @@ author: "Leo Keselman"
 venue: "Graphics Interfaces"
 authors: "Stan Melax, <strong>Leonid Keselman</strong>, Sterling Orsten"
 subtitle: "Dynamics based 3D skeletal hand tracking"
-link: https://arxiv.org/abs/1705.07640
+arxiv: https://arxiv.org/abs/1705.07640
 code: https://github.com/IntelRealSense/hand_tracking_samples
 ---
 
