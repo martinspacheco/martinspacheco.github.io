@@ -6,7 +6,7 @@ image: /images/r_design20.jpg
 categories: research
 author: "Nuno Miguel Martins Pacheco"
 venue: "Proceedings of the International Design Conference"
-authors: "Camilla Arndt Hansen, Lasse Jensen, Ali Gürcan Özkil and <strong>Nuno Miguel Martins Pacheco</strong>"
+authors: "Camilla Arndt Hansen, Lasse Skovgaard Jensen, Ali Gürcan Özkil and <strong>Nuno Miguel Martins Pacheco</strong>"
 doi: https://doi.org/10.1017/dsd.2020.132
 ---
 
