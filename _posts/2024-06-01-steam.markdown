@@ -1,0 +1,15 @@
+---
+layout: post
+title: "MCube STEAM - Development of an integrated bus system to combine passenger and parcel transport"
+date: 2024-06-01 01:00:00 +00:00
+image: /images/r_steam.jpg
+categories: research
+author: "Nuno Miguel Martins Pacheco"
+authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Moritz Seidenfus, Martin Frank, Fabian Fehn, Roman Engelhardt, Benedikt Lienkamp, Markus Mörtl, Michael Roth, Jan Rössnig, Thorsten Bergmeier-Trede, Maximilian Wegner"
+venue: "Federally funded three-year research project"
+website: https://mcube-cluster.de/projekt/steam/
+youtube: https://youtu.be/9FU8QtEOalI
+
+---
+
+MCube STEAM is a research project funded by the Federal Ministry of Education and Research (BMBF), conducted in collaboration with four TUM chairs (Product Development and Lightweight Design, Automotive Technology, Traffic Engineering and Control, and Business Analytics & Intelligent Systems), MAN Truck & Bus SE, BMW Group, Stadtwerke München GmbH, and Stanglmeier Touristik. The goal was to develop a novel integrated bus system concept that combines parcel and passenger transport to enhance road-based public transportation in Munich. The concept was realized and presented at IAA Mobility 2023 as part of a VR experience. It included a virtual bus commute from Münchner Freiheit to Odeonsplatz, showcasing all the innovations introduced with the concept.
