@@ -1,0 +1,15 @@
+---
+layout: post
+title: "THINK.MAKE.START. by TUM and UnternehmerTUM - Build innovative products of your ideas in 2 weeks"
+date: 2024-04-01 01:00:00 +00:00
+image: /images/t_tms.jpg
+categories: industry
+author: "Nuno Miguel Martins Pacheco"
+authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Maximilian Bandle, Carmen Baur, Tobias Förtsch, Belinda Büchner, Maximilian Reif, Yiyun Tong, Julia Hinderink"
+venue: "Hackathon course"
+website: https://www.tms.tum.de
+youtube: https://www.youtube.com/watch?v=lhGYrfH44uY
+
+---
+
+I led, managed, and coached the two-week course TMS designed to foster innovation and entrepreneurial thinking among students. Participants work in cross-functional teams to tackle real-world problems while collaborating to design, prototype, test and deliver a minimum viable product (MVP). The course has been instrumental in bridging academic knowledge and practical application, providing students with a platform to innovate and explore entrepreneurial ventures. There are several success stories that started a venture after the course with the original idea from the course (e.g., Angsa Robotics, Brainamics, Kewazo, Hawa Dawa, Beworm, Solos)
