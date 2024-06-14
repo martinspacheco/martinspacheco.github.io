@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mixed Reality Vehicle Prototype - Testing placing and content for infotainment systems in public transport"
-date: 2023-07-01 01:00:00 +00:00
+date: 2023-05-01 01:00:00 +00:00
 image: /images/t_mr.jpg
 categories: teaching
 author: "Nuno Miguel Martins Pacheco"
