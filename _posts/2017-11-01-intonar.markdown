@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "IntonAR - Augmented Reality Piano Trainer with Microsoft HoloLens"
-date: 2024-06-01 01:00:00 +00:00
+date: 2017-11-01 01:00:00 +00:00
 image: /images/p_intonar.jpg
 categories: private
 author: "Nuno Miguel Martins Pacheco"
