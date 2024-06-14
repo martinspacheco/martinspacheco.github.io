@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "VOYAGE - Vision 2041 utilization concept for a autonomous shared shuttle for passenger and parcel transport"
+title: "VOYAGE Vision 2041 - Utilization concept for a autonomous shared shuttle for passenger and parcel transport"
 date: 2023-03-31 01:00:00 +00:00
 image: /images/t_voyage.jpg
 categories: teaching
