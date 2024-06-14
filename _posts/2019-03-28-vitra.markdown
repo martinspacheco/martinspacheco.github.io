@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Vitra Hackathon - "
+date: 2019-03-28 01:00:00 +00:00
+image: /images/p_vitra.jpg
+categories: private
+author: "Nuno Miguel Martins Pacheco"
+authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Stephan Dirring, Pablo Pabon, Christoph Schulte"
+venue: "Vitra Hackathon"
+
+---
+
+I participated as part of a cross-functional team in the Beta Hackathon at ZKM, where we were awarded first prize for the best concept. We developed a platform that combines crowd-based innovation with social responsibility, known as Social Product Development. My contributions included designing the UI/UX and developing the business model for the platform. The concept focuses on engaging the community to ideate and develop sustainable solutions for everyday problems, such as reducing the environmental impact of disposable coffee cups. Our platform encourages collaborative problem-solving and supports the creation of socially responsible products.
