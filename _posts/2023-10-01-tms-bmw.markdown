@@ -1,0 +1,15 @@
+---
+layout: post
+title: "THINK.MAKE.START. by BMW Group - Internal design sprint to foster innovation through cross-functional collaboration"
+date: 2024-06-01 01:00:00 +00:00
+image: /images/i_tms.jpg
+categories: industry
+author: "Nuno Miguel Martins Pacheco"
+authors: "Annette Böhmer, <strong>Nuno Miguel Martins Pacheco</strong>, Maximilian Bandle"
+venue: "Federally funded three-year research project"
+website: https://www.bmwgroup.com/en/innovation/open-innovation/think-make-start.html
+youtube: https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/innovation/open-innovation/thinkmakestart/TMS_Extern_24MB_neu.mp4
+
+---
+
+TMS is a one-week design sprint, hosted by BMW Group. I organized and coached cross-functional teams by supporting teams to develop with a problem-focused approach novel solutions (e.g., user experiences, potentials of new technologies, or current challenges). This helps to address novel topics as part of the organisation to stay competitive (e.g., Metaverse).
