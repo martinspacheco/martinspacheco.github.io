@@ -67,9 +67,12 @@
           </tr>
         </table>
 
+          <!-- research projects -->
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
+
               <h2>Research Projects</h2>
               <p>
                 I am interested in hackathons, urban mobility, concept development, design methodologies, and prototyping. My research primarily focuses on investigating the influence of hackathons on product quality and the educational benefits for participants. I also develop novel urban mobility concepts for future scenarios.
@@ -135,6 +138,9 @@
         <br>
         <br>
         <br>
+
+        <!-- industry projects -->
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -155,7 +161,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
-              <em>{{post.categories}} {{post.course}}</em>
+              {{post.authors}}
               <br>
 
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
@@ -199,6 +205,9 @@
         <br>
         <br>
         <br>
+
+        <!-- teaching projects -->
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -220,7 +229,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
-              <em>{{post.categories}} {{post.course}}</em>
+              {{post.authors}}
               <br>
               
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
@@ -263,7 +272,10 @@
         </table>
         <br>
         <br>
-        <br>  
+        <br> 
+
+        <!-- private projects -->
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -287,7 +299,6 @@
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
-
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
