@@ -7,7 +7,7 @@ categories: teaching
 author: "Nuno Miguel Martins Pacheco"
 authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Moritz Seidenfus, Stephen Green, Elena Dieckmann, Nirmal Thomas, Linxi Cao, Hunaid Nagaria, Grace Duan"
 venue: "Hackathon course"
-code: https://gitfront.io/r/martinspacheco/EcMBM6Ji7SeN/mimo.git
+code: https://gitfront.io/r/martinspacheco/EcMBM6Ji7SeN/mimo
 
 ---
 
