@@ -1,0 +1,14 @@
+---
+layout: post
+title: "MiMo - An autonomous mobile parcel locker for road-based public transport systems"
+date: 2023-06-01 01:00:00 +00:00
+image: /images/t_mimo.jpg
+categories: teaching
+author: "Nuno Miguel Martins Pacheco"
+authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Moritz Seidenfus, Stephen Green, Elena Dieckmann, Nirmal Thomas, Linxi Cao, Hunaid Nagaria, Grace Duan"
+venue: "Hackathon course"
+code: https://gitfront.io/r/martinspacheco/EcMBM6Ji7SeN/mimo.git
+
+---
+
+I managed and led a team from Imperial College London to develop MiMo, an autonomous mobile parcel locker robot. Designed to enter and exit public buses autonomously, MiMo aims to enhance urban parcel delivery by utilizing public transport infrastructure, thereby reducing congestion and improving logistics efficiency. As part of the project, we built a first prototype to demonstrate its dimensions and user interface.
