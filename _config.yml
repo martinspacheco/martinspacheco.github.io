@@ -86,8 +86,8 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - CNAME
   - command.txt
   - todo.txt
   - _temp/index.html
   - _temp/
+  - REVAMP_SUMMARY.md
