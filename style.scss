@@ -10,70 +10,125 @@
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
+/* MODERN MINIMALIST DESIGN SYSTEM */
+/**************/
+
+// CSS Variables for easy theming
+:root {
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #6b7280;
+  --color-accent: #0891b2;
+  --color-accent-hover: #0e7490;
+  --color-bg: #ffffff;
+  --color-bg-subtle: #f8fafc;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 4rem;
+  --border-radius: 0.5rem;
+  --transition-speed: 0.2s;
+}
+
+/**************/
 /* BASE RULES */
 /**************/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+}
+
+td,
+th,
+tr {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
 a {
-  color: #1772d0;
+  color: var(--color-accent);
   text-decoration: none;
+  transition: color var(--transition-speed) ease, border-bottom var(--transition-speed) ease;
+  border-bottom: 1px solid transparent;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
-  text-decoration: none;
-}
-
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-display: auto;
+  color: var(--color-accent-hover);
+  border-bottom: 1px solid var(--color-accent-hover);
 }
 
 strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-display: auto;
-}
-
-h2 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
-  font-display: auto;
-  font-weight: normal;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
-}
-
-h3 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 700;
-  font-display: auto;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
+  color: var(--color-text-primary);
+}
+
+em {
+  color: var(--color-text-secondary);
+  font-style: italic;
 }
 
 h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: normal;
-  font-display: auto;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-display: swap;
   text-align: center;
-  padding: 0px;
-  margin-block-start: 14px;
-  margin-block-end: 14px;
-  margin-left: 0px;
-  margin-right: 0px;
-
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  margin: 2rem 0 2.5rem 0;
+  line-height: 1.2;
 }
 
+h2 {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  font-display: swap;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: inline-block;
+  line-height: 1.3;
+  border-bottom: 3px solid var(--color-accent);
+  padding-bottom: 0.25rem;
+}
+
+h3 {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-display: swap;
+  color: var(--color-text-primary);
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  display: inline-block;
+  line-height: 1.4;
+}
+
+/* Image hover effects */
 .one {
   width: 160px;
   height: 160px;
@@ -84,19 +139,78 @@ h1 {
   width: 160px;
   height: 160px;
   position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity var(--transition-speed) ease-in-out;
+  -moz-transition: opacity var(--transition-speed) ease-in-out;
+  -webkit-transition: opacity var(--transition-speed) ease-in-out;
 }
 
 .fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity var(--transition-speed) ease-in-out;
+  -moz-transition: opacity var(--transition-speed) ease-in-out;
+  -webkit-transition: opacity var(--transition-speed) ease-in-out;
 }
 
 span.highlight {
-  background-color: #ffffd0;
+  background-color: #fef3c7;
+  padding: 0.125rem 0.25rem;
+  border-radius: 3px;
+}
+
+/* Profile image styling */
+img {
+  border-radius: var(--border-radius);
+  transition: transform var(--transition-speed) ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* Table improvements */
+table {
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+/* Project row hover effect */
+tr {
+  transition: background-color var(--transition-speed) ease;
+}
+
+table:not(:first-child) tr:hover {
+  background-color: var(--color-bg-subtle);
+}
+
+/* Better spacing for project entries */
+td {
+  padding: 1.5rem !important;
+}
+
+td:first-child {
+  padding-right: 2rem !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  body, p, td, th, tr {
+    font-size: 15px;
+  }
+
+  td {
+    padding: 1rem !important;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
