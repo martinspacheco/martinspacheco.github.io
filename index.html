@@ -1,3 +1,367 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
+  <script>
+    
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E00L9PT3V9');
+
+  </script>
+  
+  <title>{{ site.name }}</title>
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  
+  <!-- Centering the name with improved spacing -->
+  <div style="text-align:center; margin-bottom: 3rem; margin-top: 2rem;">
+    <h1>Nuno Miguel Martins Pacheco</h1>
+  </div>
+
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p>Olá! I'm Miguel, and I design how people collaborate with intelligent systems.</p>
+
+              <p>As a Senior Researcher at <a href="https://www.siemens.com/">Siemens</a>, I focus on AI UX and product innovation, bridging human-centered research and product development. My work turns explainability, interaction design, and user insights into tangible results for Siemens' AI platforms and applications. I combine user research, prototyping, and IP creation to make AI systems more transparent, intuitive, and trustworthy.</p>
+
+              <p>I earned my Dr.-Ing. in Mechanical Engineering from the <a href="https://www.tum.de/">Technical University of Munich</a> (2024), where I led research on hackathons for innovative mechatronic product development and managed projects like the €1.3M <a href="https://mcube-cluster.de/projekt/steam/">MCube STEAM</a> mobility initiative showcased at IAA Mobility 2023. During my doctoral research, I led the <a href="https://www.tms.tum.de/">THINK. MAKE. START.</a> programme (2019-2024), fostering innovation by guiding students in solving real-world problems with emerging technologies.</p>
+
+              <p>From 2022-2024, I led design thinking and prototyping workshops at <a href="https://www.mintech.de">Mintech Engineering</a>, training over 100 professionals from <a href="https://www.bmwgroup.de">BMW Group</a>, <a href="https://www.sw.siemens.com/en-US/">Siemens</a>, and other industry partners in ideation, prototyping, and storytelling.</p>
+
+              <p>I hold an M.Sc. in Mechanical Engineering and Management from <a href="http://tum.de/">TU Munich</a> and a B.Sc. in Mechanical Engineering and Economics from <a href="http://www.tugraz.at/">TU Graz</a>.</p>
+
+              <p>Outside of work, I'm an advanced hobby barista who loves a good espresso, a vinyl enthusiast spinning classics and new hits, a passionate analog photographer, and a hobby cook exploring different cuisines. I also enjoy road/gravel biking (Munich to Bolzano) and hiking in the Alps, Norway, and Portugal.</p>
+       
+            </td>
+            <td style="padding:2.5%;width:37%;max-width:37%;vertical-align:middle">
+              <img style="width:100%;max-width:100%;border-radius:1rem;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06)" alt="profile photo" src="images/z_me_24-06-10.jpg">
+            
+            <p style="text-align:center">
+                <a href="mailto:mail@martinspacheco.de">Email</a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/martinspacheco/">LinkedIn</a> &nbsp;/&nbsp;
+                <a href="https://github.com/martinspacheco">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=oP_1xlQAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://www.researchgate.net/profile/Nuno_Miguel_Martins_Pacheco">ResearchGate</a></p>
+
+                <p style="text-align:center"><a href="{{site.baseurl}}/pdfs/MartinsPacheco_CV_2025.pdf" download>Download CV</a></p>
+
+            </td>
+          </tr>
+        </table>
+
+          <!-- research projects -->
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:3rem">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+
+              <h2>Research Projects</h2>
+              <p>
+                I am interested in hackathons, urban mobility, concept development, design methodologies, and prototyping. My research primarily focuses on investigating the influence of hackathons on product quality and the educational benefits for participants. I also develop novel urban mobility concepts for future scenarios.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'research' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {{post.authors}}
+
+              <br>
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <br>
+
+              {% if post.doi %}
+                <a href="{{post.doi}}">doi</a> /
+              {% endif %}
+              {% if post.video %}
+                <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.video2 %}
+                <a href="{{post.video2}}">video #2</a> /
+              {% endif %}
+              {% if post.code %}
+                <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+                <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+                <a href="{{post.fullpaper}}">full paper</a> /
+              {% endif %}
+              {% if post.slides %}
+                <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.website %}
+                <a href="{{post.website}}">website</a> /
+              {% endif %}
+              {% if post.website2 %}
+                <a href="{{post.website2}}">website 2</a> /
+              {% endif %}
+              {% if post.youtube %}
+                <a href="{{post.youtube}}">youtube</a> /
+              {% endif %}
+
+
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+        <br>
+        <br>
+
+        <!-- industry projects -->
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Industry Projects</h2>
+              <p>I managed development projects and lead design thinking and prototyping workshops to develop innovative mechatronic projects, primarily in the automotive sector. My work includes concept development and prototype implementation, showcasing product ideas and testing with preliminary users. Additionally, I identify novel use cases for emerging technologies to create practical and impactful solutions.</p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'industry' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {{post.authors}}
+              <br>
+
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              
+              <br>
+              {% if post.doi %}
+                <a href="{{post.doi}}">doi</a> /
+              {% endif %}
+              {% if post.video %}
+                <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.video2 %}
+                <a href="{{post.video2}}">video #2</a> /
+              {% endif %}
+              {% if post.code %}
+                <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+                <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+                <a href="{{post.fullpaper}}">full paper</a> /
+              {% endif %}
+              {% if post.slides %}
+                <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.website %}
+                <a href="{{post.website}}">website</a> /
+              {% endif %}
+              {% if post.youtube %}
+                <a href="{{post.youtube}}">youtube</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+        <br>
+        <br>
+
+        <!-- teaching projects -->
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Teaching Projects</h2>
+              <p> I have led hackathon formats and mentored students in the development of new mechatronic products. I guided them through the entire process, from ideation to implementation, and actively collaborated on the projects to ensure successful outcomes. By fostering a collaborative and innovative environment, I helped students apply their knowledge and creativity to real-world challenges, resulting in practical and impactful solutions. 
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'teaching' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {{post.authors}}
+              <br>
+              
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+
+              <br>
+              {% if post.doi %}
+                <a href="{{post.doi}}">doi</a> /
+              {% endif %}
+              {% if post.video %}
+                <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.video2 %}
+                <a href="{{post.video2}}">video #2</a> /
+              {% endif %}
+              {% if post.code %}
+                <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+                <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+                <a href="{{post.fullpaper}}">full paper</a> /
+              {% endif %}
+              {% if post.slides %}
+                <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.website %}
+                <a href="{{post.website}}">website</a> /
+              {% endif %}
+              {% if post.youtube %}
+                <a href="{{post.youtube}}">youtube</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+        <br>
+        <br> 
+
+        <!-- private projects -->
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Private Projects</h2>
+              <p>
+                I have applied my passion for solving problems and hands-on experimentation by working on a collection of private projects. These diverse projects reflect my commitment to continuous learning and creativity, showcasing unique solutions and technological explorations. Each project highlights my skills and dedication to developing practical and impactful solutions.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat != 'research' and cat != 'industry' and cat != 'teaching' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {{post.authors}}
+              <br>
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <br>
+              {% if post.doi %}
+                <a href="{{post.doi}}">doi</a> /
+              {% endif %}
+              {% if post.video %}
+                <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.video2 %}
+                <a href="{{post.video2}}">video #2</a> /
+              {% endif %}
+              {% if post.code %}
+                <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+                <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+                <a href="{{post.fullpaper}}">full paper</a> /
+              {% endif %}
+              {% if post.slides %}
+                <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.website %}
+                <a href="{{post.website}}">website</a> /
+              {% endif %}
+              {% if post.youtube %}
+                <a href="{{post.youtube}}">youtube</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>  
+      
+
+        <br>
+        <br>
+        <br>    
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a> modified by <a style="font-size:small;" href="https://leonidk.com">Leonid Keselman</a>
+
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
