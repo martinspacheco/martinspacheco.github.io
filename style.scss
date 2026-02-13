@@ -190,6 +190,179 @@ td:first-child {
   padding-right: 2rem !important;
 }
 
+/**************/
+/* TIMELINE DESIGN */
+/**************/
+
+.timeline-container {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, transparent, var(--color-accent), transparent);
+  transform: translateX(-50%);
+  opacity: 0.3;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 4rem;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger animation delays */
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) { animation-delay: 0.3s; }
+.timeline-item:nth-child(4) { animation-delay: 0.4s; }
+.timeline-item:nth-child(5) { animation-delay: 0.5s; }
+.timeline-item:nth-child(6) { animation-delay: 0.6s; }
+.timeline-item:nth-child(7) { animation-delay: 0.7s; }
+.timeline-item:nth-child(8) { animation-delay: 0.8s; }
+
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-bg);
+  border: 3px solid var(--color-accent);
+  border-radius: 50%;
+  z-index: 10;
+  transition: all var(--transition-speed) ease;
+  box-shadow: 0 0 0 4px rgba(8, 145, 178, 0.1);
+}
+
+.timeline-item:hover .timeline-marker {
+  transform: translateX(-50%) scale(1.3);
+  box-shadow: 0 0 0 8px rgba(8, 145, 178, 0.15);
+  background-color: var(--color-accent);
+}
+
+.timeline-content {
+  flex: 1;
+  max-width: 45%;
+  background-color: var(--color-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+  right: -12px;
+  border-width: 12px 0 12px 12px;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.05);
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+  left: -12px;
+  border-width: 12px 12px 12px 0;
+  border-color: transparent rgba(0, 0, 0, 0.05) transparent transparent;
+}
+
+.timeline-item:hover .timeline-content {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.1), 0 6px 12px -3px rgba(0, 0, 0, 0.05);
+  border-color: var(--color-accent);
+}
+
+.timeline-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-content h3 {
+  margin-bottom: 0.5rem;
+  color: var(--color-text-primary);
+  font-size: 1.25rem;
+}
+
+.timeline-content p {
+  margin-bottom: 0.75rem;
+}
+
+.timeline-content em {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.timeline-links {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 0.9rem;
+}
+
+.timeline-links a {
+  margin-right: 0.75rem;
+  white-space: nowrap;
+}
+
+/* Section headers for timeline */
+.timeline-section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.timeline-section-header h2 {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  background-color: var(--color-bg);
+  position: relative;
+  z-index: 5;
+}
+
+.timeline-section-header p {
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
 /* Responsive improvements */
 @media (max-width: 768px) {
   h1 {
@@ -210,6 +383,32 @@ td:first-child {
 
   td {
     padding: 1rem !important;
+  }
+
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-marker {
+    left: 20px;
+  }
+
+  .timeline-item {
+    flex-direction: column !important;
+    padding-left: 50px;
+    margin-bottom: 2.5rem;
+  }
+
+  .timeline-item:nth-child(even) {
+    flex-direction: column !important;
+  }
+
+  .timeline-content {
+    max-width: 100%;
+  }
+
+  .timeline-content::before {
+    display: none;
   }
 }
 
