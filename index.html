@@ -89,44 +89,46 @@
               <div class="timeline-marker"></div>
               <div class="timeline-content">
                 <img class="timeline-image" src="/tn{{post.image}}" alt="{{post.title}}" />
-                <h3>{{post.title}}</h3>
-                <p>{{post.authors}}</p>
-                <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+                <div class="timeline-text-content">
+                  <h3>{{post.title}}</h3>
+                  <p>{{post.authors}}</p>
+                  <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
 
-                <div class="timeline-links">
-                  {% if post.doi %}
-                    <a href="{{post.doi}}">doi</a>
-                  {% endif %}
-                  {% if post.video %}
-                    <a href="{{post.video}}">video</a>
-                  {% endif %}
-                  {% if post.video2 %}
-                    <a href="{{post.video2}}">video #2</a>
-                  {% endif %}
-                  {% if post.code %}
-                    <a href="{{post.code}}">code</a>
-                  {% endif %}
-                  {% if post.poster %}
-                    <a href="{{post.poster}}">poster</a>
-                  {% endif %}
-                  {% if post.slides %}
-                    <a href="{{post.fullpaper}}">full paper</a>
-                  {% endif %}
-                  {% if post.slides %}
-                    <a href="{{post.slides}}">slides</a>
-                  {% endif %}
-                  {% if post.website %}
-                    <a href="{{post.website}}">website</a>
-                  {% endif %}
-                  {% if post.website2 %}
-                    <a href="{{post.website2}}">website 2</a>
-                  {% endif %}
-                  {% if post.youtube %}
-                    <a href="{{post.youtube}}">youtube</a>
-                  {% endif %}
+                  <div class="timeline-links">
+                    {% if post.doi %}
+                      <a href="{{post.doi}}">doi</a>
+                    {% endif %}
+                    {% if post.video %}
+                      <a href="{{post.video}}">video</a>
+                    {% endif %}
+                    {% if post.video2 %}
+                      <a href="{{post.video2}}">video #2</a>
+                    {% endif %}
+                    {% if post.code %}
+                      <a href="{{post.code}}">code</a>
+                    {% endif %}
+                    {% if post.poster %}
+                      <a href="{{post.poster}}">poster</a>
+                    {% endif %}
+                    {% if post.slides %}
+                      <a href="{{post.fullpaper}}">full paper</a>
+                    {% endif %}
+                    {% if post.slides %}
+                      <a href="{{post.slides}}">slides</a>
+                    {% endif %}
+                    {% if post.website %}
+                      <a href="{{post.website}}">website</a>
+                    {% endif %}
+                    {% if post.website2 %}
+                      <a href="{{post.website2}}">website 2</a>
+                    {% endif %}
+                    {% if post.youtube %}
+                      <a href="{{post.youtube}}">youtube</a>
+                    {% endif %}
+                  </div>
+
+                  <p>{{ post.excerpt }}</p>
                 </div>
-
-                <p>{{ post.excerpt }}</p>
               </div>
             </div>
             {% endif %}

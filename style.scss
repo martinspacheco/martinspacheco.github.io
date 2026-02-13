@@ -270,7 +270,7 @@ td:first-child {
 
 .timeline-content {
   flex: 1;
-  max-width: 48%;
+  max-width: 55%;
   background-color: var(--color-bg);
   padding: clamp(1rem, 3vw, 2rem);
   border-radius: 12px;
@@ -278,6 +278,9 @@ td:first-child {
   border: 1px solid rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   position: relative;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
 }
 
 .timeline-content::before {
@@ -308,11 +311,17 @@ td:first-child {
 }
 
 .timeline-image {
-  max-width: 100%;
+  flex-shrink: 0;
+  width: 200px;
   height: auto;
   border-radius: 8px;
-  margin-bottom: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+}
+
+.timeline-text-content {
+  flex: 1;
+  min-width: 0;
 }
 
 .timeline-content h3 {
@@ -373,22 +382,30 @@ td:first-child {
 /* Responsive improvements */
 @media (max-width: 1200px) {
   .timeline-content {
-    max-width: 46%;
+    max-width: 52%;
   }
 
   .timeline-item {
     gap: 1.5%;
   }
+
+  .timeline-image {
+    width: 180px;
+  }
 }
 
 @media (max-width: 992px) {
   .timeline-content {
-    max-width: 47%;
+    max-width: 50%;
     padding: 1.5rem;
   }
 
   .timeline-item {
     gap: 1%;
+  }
+
+  .timeline-image {
+    width: 160px;
   }
 }
 
@@ -433,6 +450,7 @@ td:first-child {
 
   .timeline-content {
     max-width: 100%;
+    flex-direction: column;
   }
 
   .timeline-content::before {
@@ -441,6 +459,11 @@ td:first-child {
 
   .timeline-section-header p {
     max-width: 100%;
+  }
+
+  .timeline-image {
+    width: 100%;
+    max-width: 300px;
   }
 }
 
