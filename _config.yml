@@ -86,7 +86,6 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - STRUCTURE.md
   - command.txt
   - todo.txt
   - _temp/

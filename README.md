@@ -2,21 +2,18 @@
 
 My personal academic website showcasing research, industry, teaching, and private projects.
 
-> **📖 For complete repository structure details, see [STRUCTURE.md](STRUCTURE.md)**
-
 ---
 
 ## ⚡ Quick Reference
 
-| What to Edit  | File                        | Action                            |
-| ------------- | --------------------------- | --------------------------------- |
-| Bio text      | `_includes/bio.html`        | Edit and push                     |
-| Your photo    | `images/z_me_24-06-10.jpg`  | Replace file                      |
-| Your name     | `index.html` (line ~48)     | Change `<h1>` text                |
-| Social links  | `index.html` (lines ~80-84) | Edit `<a href>` tags              |
-| Add project   | `_posts/`                   | Create `YYYY-MM-DD-name.markdown` |
-| Colors/fonts  | `_sass/_variables.scss`     | Edit variables                    |
-| Site settings | `_config.yml`               | Edit configuration                |
+| What to Edit | File                        | Action                            |
+| ------------ | --------------------------- | --------------------------------- |
+| Bio text     | `_includes/bio.html`        | Edit and push                     |
+| Your photo   | `images/z_me_24-06-10.jpg`  | Replace file                      |
+| Your name    | `index.html` (line ~48)     | Change `<h1>` text                |
+| Social links | `index.html` (lines ~80-84) | Edit `<a href>` tags              |
+| Add project  | `_posts/`                   | Create `YYYY-MM-DD-name.markdown` |
+| Colors/fonts | `_sass/_variables.scss`     | Edit variables                    |
 
 ### 🚀 Publishing Changes
 
@@ -30,37 +27,15 @@ Wait 2-3 minutes → Hard refresh browser: `Cmd + Shift + R` (Mac) or `Ctrl + Sh
 
 ---
 
-## 🚀 Common Tasks - Step by Step
+## � How To
 
-### 1. Update Your Bio
+### Update Bio
 
-**File:** `_includes/bio.html`
+Edit `_includes/bio.html` - changes apply everywhere automatically
 
-This single file controls your bio text across the entire website. Edit it and push to update everywhere.
+### Add New Project
 
-### 2. Update Your Photo
-
-**File:** `images/z_me_24-06-10.jpg`
-
-Replace this file with your photo (keep the same filename, or update the filename in `index.html` line ~76 and `_layouts/default.html` line ~45)
-
-### 3. Update Your Name
-
-**File:** `index.html` (line ~48) and `_layouts/default.html` (line ~33)
-
-Change the text inside `<h1>Your Name</h1>`
-
-### 4. Update Social Links
-
-**File:** `index.html` (lines ~80-84) and `_layouts/default.html` (lines ~48-52)
-
-Edit the `<a href="">` links
-
-### 5. Add a New Project
-
-**Location:** `_posts/` folder
-
-Create a new file named `YYYY-MM-DD-project-name.markdown` with this template:
+Create `_posts/YYYY-MM-DD-project-name.markdown` with this template:
 
 ```markdown
 ---
@@ -68,54 +43,97 @@ layout: post
 title: "Your Project Title"
 date: 2024-01-01
 image: /images/project-image.jpg
-categories: research # Options: research, industry, teaching, or other
-authors: "Your Name, Collaborator Name"
-venue: "Conference or Journal Name"
-excerpt: "Short description of your project that appears on the homepage."
-doi: "https://doi.org/..." # optional
+categories: research # or: industry, teaching, other
+authors: "Your Name"
+venue: "Conference/Journal"
+excerpt: "Short description"
+doi: "https://..." # optional
 video: "https://..." # optional
-website: "https://..." # optional
 ---
 ```
 
+After adding images, run: `bash scripts/make_thumbnails.sh`
+
+### Change Colors/Fonts
+
+Edit `_sass/_variables.scss`
+
+### Update Google Analytics
+
+Edit `index.html` and `_layouts/default.html` (search for "gtag")
+
+---
+
 ## 📁 Repository Structure
 
+### What File Should I Edit?
+
+| What You Want to Change    | Edit This File                    | Location     |
+| -------------------------- | --------------------------------- | ------------ |
+| Biography text             | `bio.html`                        | `_includes/` |
+| Add new project            | Create `YYYY-MM-DD-name.markdown` | `_posts/`    |
+| Change colors              | `_variables.scss`                 | `_sass/`     |
+| Change homepage layout     | `index.html`                      | root         |
+| Change project page layout | `default.html`                    | `_layouts/`  |
+| Site name/URL              | `_config.yml`                     | root         |
+
+### Complete Structure
+
 ```
-├── index.html              # Homepage
-├── style.scss              # Main stylesheet
-├── _config.yml             # Site configuration
+martinspacheco.github.io/
 │
-├── 📖 README.md            # This file - complete guide
-├── 📖 STRUCTURE.md         # Detailed structure reference
+├── 🏠 FRONTEND (What visitors see)
+│   ├── index.html              # Homepage with bio & project grid
+│   └── style.scss              # Main stylesheet (compiles SASS)
 │
-├── _includes/              # Reusable HTML components
-│   └── bio.html           # Your bio (edit this!)
+├── 🎨 STYLING (Colors, fonts, design)
+│   └── _sass/                  # Modular stylesheets
+│       ├── _variables.scss     # Colors, fonts, sizes ⬅ Edit colors here
+│       ├── _reset.scss         # Browser normalization
+│       ├── _highlights.scss    # Code block styling
+│       └── _svg-icons.scss     # Social media icon styles
+│       └── 📖 README.md
 │
-├── _layouts/               # Page templates
-│   ├── default.html       # Main layout
-│   └── post.html          # Post wrapper
+├── 📄 CONTENT (Your projects & bio)
+│   ├── _posts/                 # Project posts ⬅ Add projects here
+│   │   ├── 2024-06-01-steam.markdown
+│   │   ├── 2024-04-01-tms-tum.markdown
+│   │   ├── ... (24 total)
+│   │   └── 📖 README.md
+│   │
+│   ├── _includes/              # Reusable content blocks
+│   │   ├── bio.html            # Biography ⬅ Edit bio here
+│   │   └── 📖 README.md
+│   │
+│   ├── images/                 # Full-size images (50+ files)
+│   ├── tn/images/             # Thumbnails (auto-generated)
+│   └── pdfs/                   # Downloadable PDFs
 │
-├── _posts/                 # Your projects (add new ones here!)
-│   └── YYYY-MM-DD-*.markdown
+├── 🏗️ STRUCTURE (Templates & config)
+│   ├── _layouts/               # Page templates
+│   │   ├── default.html        # Main wrapper (header, footer, nav)
+│   │   ├── post.html           # Project post template
+│   │   └── 📖 README.md
+│   │
+│   └── _config.yml             # Jekyll configuration
 │
-├── _sass/                  # Stylesheet components
-│   ├── _variables.scss    # Colors, fonts
-│   ├── _reset.scss        # Browser resets
-│   ├── _highlights.scss   # Code highlighting
-│   └── _svg-icons.scss    # Icon styles
+├── 🔧 TOOLS (Utilities)
+│   └── scripts/                # Helper scripts
+│       ├── make_thumbnails.sh  # Generate image thumbnails
+│       ├── make_favicon.sh     # Create site favicon
+│       └── 📖 README.md
 │
-├── scripts/                # Utility scripts
-│   ├── make_thumbnails.sh # Generate thumbnails
-│   └── make_favicon.sh    # Create favicon
+├── ⚙️ CONFIGURATION
+│   ├── _config.yml             # Site settings, plugins, excludes
+│   ├── .gitignore             # Ignored files
+│   ├── CNAME                  # Custom domain (martinspacheco.de)
+│   └── LICENSE                # MIT License
 │
-├── images/                 # Full-size images
-├── tn/images/             # Thumbnails (auto-generated)
-└── pdfs/                   # PDF files
+└── 📖 DOCUMENTATION
+    └── README.md               # This comprehensive guide
 ```
 
-**📚 Each folder has its own README with detailed documentation!**
-
-For complete structure details, see [STRUCTURE.md](STRUCTURE.md)
+**💡 Tip:** Each major folder (`_includes/`, `_layouts/`, `_posts/`, `_sass/`, `scripts/`) has its own README with detailed information.
 
 ## 🔧 How It Works
 
@@ -209,6 +227,25 @@ In `index.html`, delete or comment out entire `<div>` blocks for:
 
 - Make sure files have front matter at the top (--- ---)
 - Check `_config.yml` has the right variable names
+
+**Q: Need more help?**
+
+- Check comments in the actual file you're editing (all code is extensively commented)
+- Read the specific folder's README for detailed information
+- Review Jekyll documentation for template syntax
+
+---
+
+## ✅ Best Practices
+
+1. **One change at a time** - Easier to debug if something breaks
+2. **Descriptive commit messages** - "Update bio" is better than "changes"
+3. **Read folder READMEs** - Each major folder has specific guidance
+4. **Hard refresh browser** - Always use `Cmd+Shift+R` / `Ctrl+Shift+R` to clear cache
+5. **Test locally** - Run `jekyll serve` to preview before pushing (optional)
+6. **Back up images** - Keep originals before running thumbnail scripts
+
+---
 
 ## 📚 Resources
 
