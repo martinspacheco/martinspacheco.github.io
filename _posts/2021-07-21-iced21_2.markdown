@@ -10,4 +10,4 @@ authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Anand Vazhapilli Sureshb
 doi: https://doi.org/10.1017/pds.2021.12
 ---
 
-The article presents the PETRA framework to guide start-ups through the fuzzy front-end of product development. Applied in a case study with robotics startup, PETRA improves resource allocation, team organization, and the development process, leading to a clear roadmap for achieving a minimum viable product (MVP). Key elements include role-based prototyping and iterative cycles with a Protoban for planning. The framework enhances efficiency and effectiveness in early-stage product development and is adaptable to various start-ups and products.
+Presents the PETRA framework for guiding startups through the fuzzy front-end of product development. Applied in a robotics startup case study, it improved resource allocation, team organization, and development focus — producing a clear roadmap toward a minimum viable product through role-based prototyping and iterative Protoban planning cycles.

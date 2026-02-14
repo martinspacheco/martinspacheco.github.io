@@ -8,7 +8,6 @@ author: "Nuno Miguel Martins Pacheco"
 authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Kristina Strobl, Lars Rasmussen, Luis Onuma, Philipp Strack"
 venue: "Development project"
 youtube: https://youtu.be/QF9XvwHR7hs
-
 ---
 
-I worked in a team to develop an innovative piano training tool using Microsoft HoloLens. The HoloLens displayed the content to play, while exoskeleton gloves provided vibrating indications for which fingers to use. This augmented reality piano trainer was tested with piano teachers and involved multiple user testing sessions to refine the user experience. Our goal was to create an engaging and intuitive learning tool for piano students by combining augmented reality with haptic feedback technology. My main part was developing and building the functional gloves for the users.
+A piano training tool combining Microsoft HoloLens with haptic exoskeleton gloves — the HoloLens displaying musical content while the gloves delivered vibrating finger cues. Tested with piano teachers through multiple sessions. My focus: designing and building the functional haptic gloves.

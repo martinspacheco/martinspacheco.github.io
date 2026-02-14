@@ -7,7 +7,6 @@ categories: private
 author: "Nuno Miguel Martins Pacheco"
 authors: "<strong>Nuno Miguel Martins Pacheco</strong>"
 venue: "Own project"
-
 ---
 
-I designed and built a custom vinyl shelf because I couldn’t find one that suited my needs. I selected bamboo wood for its durability and aesthetic appeal and then went to a wood workshop to construct the shelf. The result is a personalized and functional shelf that perfectly fits my vinyl collection.
+Designed and built a custom bamboo vinyl shelf after failing to find one that met my needs. Constructed at a wood workshop to exact dimensions — a functional solution built from scratch.

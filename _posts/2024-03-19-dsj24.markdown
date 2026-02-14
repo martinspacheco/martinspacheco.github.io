@@ -10,4 +10,4 @@ authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Mara Geisler, Medina Baj
 doi: https://doi.org/10.1017/dsj.2024.9
 ---
 
-This article explores how novice teams participating in hackathons learn and improve product quality through effort. The main result shows that increased effort, especially during the solution phase, significantly improves product quality. Other types of effort and their correlation with product quality are insignificant. This underscores the importance of the solution phase for the resulting product quality, while the impact on learning effect needs further research.
+Explores how effort during hackathons affects product quality and learning in novice teams. The key finding: effort concentrated in the solution phase significantly improves product quality, while effort in other phases shows no significant effect — underscoring the solution phase as the critical window for outcome quality.

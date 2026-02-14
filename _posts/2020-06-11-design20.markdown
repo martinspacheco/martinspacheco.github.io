@@ -10,4 +10,4 @@ authors: "Camilla Arndt Hansen, Lasse Skovgaard Jensen, Ali Gürcan Özkil and <
 doi: https://doi.org/10.1017/dsd.2020.132
 ---
 
-The article in collaboration with the Technical University of Denmark (DTU) introduces the “Prototyping Planner,” a tool designed to foster a structured prototyping mindset in novice designers. It outlines the development, testing, and evaluation of the tool over two years with 20 design teams. The main findings indicate that the Prototyping Planner helps novice designers create purposeful prototypes and evaluate results, though its efficiency in prototyping and ease of use received mixed feedback. Overall, the tool is seen as beneficial for teaching formal prototyping practices and enhancing documentation and communication of prototyping activities
+A collaboration with the Technical University of Denmark introducing the Prototyping Planner — a tool to build structured prototyping habits in novice designers. Developed and tested over two years with 20 design teams, it supports purposeful prototype creation and outcome evaluation, with overall positive impact on formal prototyping practice and documentation.

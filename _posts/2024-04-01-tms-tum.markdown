@@ -12,4 +12,4 @@ youtube: https://www.youtube.com/watch?v=lhGYrfH44uY
 
 ---
 
-I led, managed, and coached the two-week course TMS designed to foster innovation and entrepreneurial thinking among students. Participants work in cross-functional teams to tackle real-world problems while collaborating to design, prototype, test and deliver a minimum viable product (MVP). The course has been instrumental in bridging academic knowledge and practical application, providing students with a platform to innovate and explore entrepreneurial ventures. There are several success stories that started a venture after the course with the original idea from the course (e.g., Angsa Robotics, Brainamics, Kewazo, Hawa Dawa, Beworm, Solos)
+A two-week hackathon course fostering innovation and entrepreneurial thinking. Cross-functional student teams design, prototype, test, and deliver a minimum viable product around real-world problems. The course has produced multiple successful ventures including Angsa Robotics, Brainamics, Kewazo, Hawa Dawa, Beworm, and Solos.

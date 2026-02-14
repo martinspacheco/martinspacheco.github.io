@@ -10,4 +10,4 @@ authors: "Anand Vazhapilli Sureshbabu, <strong>Nuno Miguel Martins Pacheco</stro
 doi: https://doi.org/10.1017/pds.2022.255
 ---
 
-This article explores the development of a trash-picking robot together with a robotics startup with a strong emphasis on human-robot interaction (HRI). The study utilizes the double diamond process to enhance the robot’s usability and user experience.
+Explores the development of a trash-picking robot with a robotics startup, with a strong emphasis on human-robot interaction. The double diamond process was used to guide design decisions toward improved usability and user experience.

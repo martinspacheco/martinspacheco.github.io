@@ -11,4 +11,4 @@ code: https://gitfront.io/r/martinspacheco/EcMBM6Ji7SeN/mimo
 
 ---
 
-I managed and led a team from Imperial College London to develop MiMo, an autonomous mobile parcel locker robot. Designed to enter and exit public buses autonomously, MiMo aims to enhance urban parcel delivery by utilizing public transport infrastructure, thereby reducing congestion and improving logistics efficiency. As part of the project, we built a first prototype to demonstrate its dimensions and user interface.
+Led an Imperial College London team in developing MiMo — an autonomous mobile parcel locker robot that enters and exits public buses independently. The concept aims to reduce urban congestion by leveraging public transport infrastructure for last-mile delivery. A first prototype was built to demonstrate dimensions and user interface.

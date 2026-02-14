@@ -11,4 +11,4 @@ youtube: https://youtu.be/mTt364GexAQ
 
 ---
 
-Moving space is a industry development project together with BMW Group, UnternehmerTUM Makerspace, and Stanglmeier Touristik with the aim of developing a novel use-case for autonomous vehicles (AV). To enable physical excercises and reduce motion sickness, a sensor-box was integrated to sync real-time vehicle dynamics with VR activities, enhancing user engagement. The solution was tested with multiple users providing valuable feedback.
+A nine-month industry project with BMW Group, UnternehmerTUM Makerspace, and Stanglmeier Touristik developing a novel use case for autonomous vehicles. A sensor box was integrated to sync real-time vehicle dynamics with VR activities, enabling physical exercise and reducing motion sickness. The solution was tested with multiple users.

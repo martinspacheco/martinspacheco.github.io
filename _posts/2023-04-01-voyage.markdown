@@ -8,7 +8,6 @@ author: "Nuno Miguel Martins Pacheco"
 authors: "Leila Al-Azzawi, Itziar De Pedro, Robert Field, Esther Del Portillo, Harry Schlote, Carlos Caballero, Stefano Ferrari, <strong>Nuno Miguel Martins Pacheco</strong>, Moritz Seidenfus, Stephen Green, Elena Dieckmann"
 venue: "International student development project"
 youtube: https://www.youtube.com/watch?v=QyJsLKKhUbQ
-
 ---
 
-Led the collaboration project together with the Imperial College of London and coached the team in the development of an autonomous vehicle utilisation concept for urban mobility by combining passenger and goods transport in a Moving Space. The concept was presented <a style="font-size:small;" href="https://wardsauto.informa.com/autotech-detroit/">AutoTech: Detroit 2022 event</a>.
+Led a collaborative project with Imperial College London developing an autonomous vehicle concept combining passenger and goods transport in a shared Moving Space for urban mobility. Presented at AutoTech: Detroit 2022.

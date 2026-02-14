@@ -7,9 +7,7 @@ categories: industry
 author: "Nuno Miguel Martins Pacheco"
 authors: "Annette Böhmer, <strong>Nuno Miguel Martins Pacheco</strong>, Maximilian Bandle"
 venue: "Internal design sprints"
-website: https://www.bmwgroup.com/en/innovation/open-innovation/think-make-start.html
 youtube: https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/innovation/open-innovation/thinkmakestart/TMS_Extern_24MB_neu.mp4
-
 ---
 
-TMS is a one-week design sprint, hosted by BMW Group. I organized and coached cross-functional teams by supporting teams to develop with a problem-focused approach novel solutions (e.g., user experiences, potentials of new technologies, or current challenges). This helps to address novel topics as part of the organisation to stay competitive (e.g., Metaverse).
+A one-week internal design sprint at BMW Group. I organized and coached cross-functional teams through a problem-focused process to develop novel solutions — from new user experiences to emerging technology applications such as Metaverse integration — helping the organization address new topics and stay competitive.

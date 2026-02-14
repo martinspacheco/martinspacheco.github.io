@@ -10,7 +10,6 @@ venue: "Federally funded three-year research project"
 website: https://mcube-cluster.de/projekt/steam/
 website2: https://antoniocoppola364.github.io/#/routes
 youtube: https://youtu.be/9FU8QtEOalI
-
 ---
 
-MCube STEAM is a research project funded by the Federal Ministry of Education and Research (BMBF), conducted in collaboration with four TUM chairs (Product Development and Lightweight Design, Automotive Technology, Traffic Engineering and Control, and Business Analytics & Intelligent Systems), MAN Truck & Bus SE, BMW Group, Stadtwerke München GmbH, and Stanglmeier Touristik. The goal was to develop a novel integrated bus system concept that combines parcel and passenger transport to enhance road-based public transportation in Munich. The concept was realized and presented at IAA Mobility 2023 as part of a VR experience. It included a virtual bus commute from Münchner Freiheit to Odeonsplatz, showcasing all the innovations introduced with the concept.
+A federally funded three-year research project developing a novel integrated bus system combining parcel and passenger transport to enhance road-based public transportation in Munich. Conducted with four TUM chairs, MAN Truck & Bus SE, BMW Group, Stadtwerke München, and Stanglmeier Touristik. The concept was presented at IAA Mobility 2023 as a VR experience simulating a bus commute from Münchner Freiheit to Odeonsplatz.

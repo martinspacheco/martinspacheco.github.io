@@ -8,7 +8,6 @@ author: "Nuno Miguel Martins Pacheco"
 authors: "Stefano Ferrari, <strong>Nuno Miguel Martins Pacheco</strong>"
 venue: "Student project"
 youtube: https://youtu.be/XDaHyHmoQIc
-
 ---
 
-I mentored and worked closely with a student on a master thesis project focused on developing a mixed reality 1:1 vehicle prototype. This prototype, equipped with surrounding screens and sound, was designed to test the optimal positioning and content necessary for an infotainment system in road-based public transport. We tested and evaluated different versions of the infotainment system with various users to gather feedback on user preferences and interaction. This comprehensive evaluation provided valuable insights that guided our decisions on the most effective screen placement and content presentation for enhancing the user experience in public transport.
+Mentored a master's thesis project developing a mixed reality 1:1 vehicle prototype to test screen placement and content for infotainment systems in public transport. Evaluated across multiple configurations with real users, generating insights that directly shaped final design decisions on placement and content presentation.

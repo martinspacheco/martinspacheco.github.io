@@ -9,7 +9,6 @@ authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Anand Vazhapilli Sureshb
 venue: "Research tool for data collection"
 website: https://www.tms.petra-prototyping.de/
 code: https://gitfront.io/r/martinspacheco/rNsFbMc4fRVb/petra-tool/
-
 ---
 
-This web application is a design support for innovative mechatronic product development which helps novice teams to manage and simplify their prototyping journey from idea to product concept by using project cycles and following an adapted double diamond approach.
+A web-based design support tool helping novice teams navigate the prototyping journey from idea to product concept. Built around an adapted double diamond approach with structured project cycles, it reduces complexity for early-stage teams in mechatronic product development.

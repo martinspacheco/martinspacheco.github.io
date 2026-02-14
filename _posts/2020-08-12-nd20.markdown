@@ -10,4 +10,4 @@ authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Jan Behrenbeck, Bilal Ta
 doi: https://doi.org/10.35199/NORDDESIGN2020.7
 ---
 
-The article introduces the Role-Based Prototyping Approach (RBPA) to aid novice designers in the early stages of new product development. This methodology focuses on structured prototyping activities and role allocation within teams to manage the uncertainties and complexities of the fuzzy front-end phase. The study shows that the RBPA enhances team collaboration and increases prototyping activities, ultimately improving the efficiency and effectiveness of developing minimum viable products (MVPs).
+Introduces THINK.MAKE.START. — a ten-day makeathon course at TU Munich designed to build behavioral competencies for new product development and entrepreneurship. The course emphasizes autonomy, teamwork, and iterative prototyping, with findings showing it effectively fosters behaviors like resource leveraging and learning from failure.
