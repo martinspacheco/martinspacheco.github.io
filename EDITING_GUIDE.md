@@ -1,22 +1,48 @@
-# How to Update Your Website
+# Quick Editing Guide
 
-## Quick Reference
+## ✏️ Most Common Edits
 
 ### Update Your Bio
+```
+File: _includes/bio.html
+```
+Edit this one file to change your bio everywhere on the site.
 
-**File:** `_includes/bio.html`
+### Change Your Photo
+```
+File: images/z_me_24-06-10.jpg
+```
+Replace the image file (or update the filename in index.html line ~76)
 
-Edit this single file to update your bio across the entire website. No need to edit multiple files!
+### Update Social Links
+```
+Files: index.html (lines ~80-84)
+       _layouts/default.html (lines ~48-52)
+```
+Edit the `<a href="...">` tags
 
-### Update Other Content
+### Add a New Project
+```
+Location: _posts/
+Filename: YYYY-MM-DD-project-name.markdown
+```
 
-- **Homepage structure:** `index.html`
-- **Post layout:** `_layouts/default.html`
-- **Individual posts:** `_posts/` folder
+Template:
+```markdown
+---
+layout: post
+title: "Project Title"
+date: 2024-01-01
+image: /images/project.jpg
+categories: research  # or: industry, teaching, other
+authors: "Your Name"
+venue: "Conference/Journal"
+excerpt: "Short description"
+doi: "https://..."  # optional
+---
+```
 
-## Publishing Changes
-
-After making edits:
+## 🚀 Publishing Changes
 
 ```bash
 git add .
@@ -24,25 +50,27 @@ git commit -m "Your change description"
 git push
 ```
 
-Wait 2-3 minutes for GitHub Pages to rebuild, then hard refresh your browser (`Cmd + Shift + R`).
+Wait 2-3 minutes → Hard refresh browser (`Cmd + Shift + R`)
 
-## Structure Overview
+## 📁 File Structure Quick Reference
 
-```
-_includes/
-  bio.html           ← Your bio (used everywhere)
-_layouts/
-  default.html       ← Layout for posts
-  post.html          ← Post template
-index.html           ← Homepage (includes bio.html)
-_posts/               ← Blog posts
-```
+| What to Edit | File |
+|--------------|------|
+| Bio text | `_includes/bio.html` |
+| Site name | `_config.yml` |
+| Homepage layout | `index.html` |
+| Post layout | `_layouts/default.html` |
+| Projects | `_posts/*.markdown` |
+| Photo | `images/z_me_24-06-10.jpg` |
+| Styles | `style.scss` |
 
-## Troubleshooting
+## ❗ Important Notes
 
-**Changes not showing?**
+- Always include front matter (`---` at top of files) in .html files for Jekyll to process them
+- Images go in `images/` folder, thumbnails in `tn/images/`
+- Changes take 2-3 minutes to deploy to live site
+- Hard refresh browser to see changes (clears cache)
 
-1. Verify changes are pushed: `git status`
-2. Check GitHub Actions build status
-3. Hard refresh browser: `Cmd + Shift + R`
-4. Clear browser cache completely
+## 📖 Full Documentation
+
+See [README.md](README.md) for complete documentation and troubleshooting.

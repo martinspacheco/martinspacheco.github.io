@@ -1,28 +1,39 @@
 ---
+# ============================================================================
+# JEKYLL FRONT MATTER
+# This empty front matter (---  ---) tells Jekyll to process this file
+# Without it, Jekyll won't replace {{ variables }} with actual values
+# ============================================================================
 ---
 <!DOCTYPE HTML>
 <html lang="en">
 
 <head>
   
-  <!-- Google tag (gtag.js) -->
+  <!-- ===================================================================== 
+       GOOGLE ANALYTICS
+       Tracks website visitors. To change ID, edit G-E00L9PT3V9 below
+  ====================================================================== -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
   <script>
-    
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-E00L9PT3V9');
-
   </script>
   
+  <!-- ===================================================================== 
+       SITE METADATA
+       {{ site.name }} comes from _config.yml
+  ====================================================================== -->
   <title>{{ site.name }}</title>
-
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- ===================================================================== 
+       STYLESHEETS
+  ====================================================================== -->
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -31,19 +42,35 @@
 
 <body>
   
-  <!-- Centering the name with improved spacing -->
+  <!-- ===================================================================== 
+       HEADER: Your name
+       TO CHANGE: Edit the text inside <h1> tags
+  ====================================================================== -->
   <div style="text-align:center; margin-bottom: 3rem; margin-top: 2rem;">
     <h1>Nuno Miguel Martins Pacheco</h1>
   </div>
 
+  <!-- ===================================================================== 
+       MAIN CONTENT CONTAINER
+  ====================================================================== -->
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:0px">
+        
+        <!-- =================================================================
+             BIO SECTION: Introduction + Photo
+             Your bio text comes from _includes/bio.html
+             TO CHANGE BIO: Edit _includes/bio.html
+             TO CHANGE PHOTO: Replace images/z_me_24-06-10.jpg
+             TO CHANGE LINKS: Edit the <a> tags below
+        ================================================================= -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr style="padding:0px">
+            <!-- Left column: Bio text -->
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               {% include bio.html %}
             </td>
+            <!-- Right column: Photo and social links -->
             <td style="padding:2.5%;width:37%;max-width:37%;vertical-align:middle">
               <img style="width:100%;max-width:100%;border-radius:1rem;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06)" alt="profile photo" src="images/z_me_24-06-10.jpg">
             
@@ -58,7 +85,11 @@
           </tr>
         </table>
 
-          <!-- research projects -->
+          <!-- ===============================================================
+               RESEARCH PROJECTS SECTION
+               Shows all posts with category='research' from _posts/ folder
+               TO ADD NEW PROJECT: Create a new file in _posts/ with category: research
+          =============================================================== -->
 
         <div style="width:90%;max-width:1400px;margin:3rem auto 0;">
           <div class="timeline-section-header">
