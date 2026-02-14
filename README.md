@@ -8,9 +8,9 @@ My personal academic website showcasing research, industry, teaching, and privat
 
 | What to Edit | File                        | Action                            |
 | ------------ | --------------------------- | --------------------------------- |
+| Your name    | `_includes/name.html`       | Edit and push                     |
 | Bio text     | `_includes/bio.html`        | Edit and push                     |
 | Your photo   | `images/z_me_24-06-10.jpg`  | Replace file                      |
-| Your name    | `index.html` (line ~48)     | Change `<h1>` text                |
 | Social links | `index.html` (lines ~80-84) | Edit `<a href>` tags              |
 | Add project  | `_posts/`                   | Create `YYYY-MM-DD-name.markdown` |
 | Colors/fonts | `_sass/_variables.scss`     | Edit variables                    |
@@ -70,6 +70,7 @@ Edit `index.html` and `_layouts/default.html` (search for "gtag")
 
 | What You Want to Change    | Edit This File                    | Location     |
 | -------------------------- | --------------------------------- | ------------ |
+| Your name                  | `name.html`                       | `_includes/` |
 | Biography text             | `bio.html`                        | `_includes/` |
 | Add new project            | Create `YYYY-MM-DD-name.markdown` | `_posts/`    |
 | Change colors              | `_variables.scss`                 | `_sass/`     |

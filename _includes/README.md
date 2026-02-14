@@ -8,6 +8,19 @@ Includes let you write content once and reuse it everywhere. When you update an 
 
 ## Current Includes
 
+### `name.html`
+
+**Purpose:** Your name displayed in the header
+
+**Used in:**
+
+- `index.html` (homepage)
+- `_layouts/default.html` (project pages)
+
+**To edit:** Simply open `name.html` and change the text. Your name will update everywhere automatically.
+
+**Format:** Plain text (no HTML tags needed)
+
 ### `bio.html`
 
 **Purpose:** Your biography text
