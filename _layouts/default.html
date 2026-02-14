@@ -50,10 +50,10 @@
 <body>
   
   <!-- ===================================================================== 
-       CONTENT FROM OTHER FILES GOES HERE
-       This {{ content }} variable is replaced with:
-       - index.html content (for homepage)
-       - _layouts/post.html content (for project pages)
+       CONTENT INJECTION
+       The {{ content }} variable below gets replaced with page content:
+       • index.html → Your homepage
+       • _layouts/post.html → Individual project pages
   ====================================================================== -->
   {{ content }}
 
