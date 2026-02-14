@@ -1,0 +1,43 @@
+# ============================================================================
+# .gitignore - Files to exclude from version control
+# ============================================================================
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jekyll build files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby/Bundler
+.bundle/
+vendor/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Backup files
+*.bak
+*.old
+*~
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
+# Local development
+.env
+.env.local

@@ -90,9 +90,9 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - EDITING_GUIDE.md
+  - STRUCTURE.md
   - command.txt
   - todo.txt
-  - _temp/index.html
   - _temp/
-  - REVAMP_SUMMARY.md
-  - EDITING_GUIDE.md
+  - scripts/
