@@ -15,15 +15,15 @@ The HTML structure/styling is in `_layouts/default.html` (don't edit that for co
 
 ## ⚡ Quick Reference
 
-| What to Edit         | File                        | Action                            |
-| -------------------- | --------------------------- | --------------------------------- |
-| **Website content**  | **`index.html`**            | **Edit and push (MAIN FILE)**     |
-| Your name            | `_includes/name.html`       | Edit and push                     |
-| Bio text             | `_includes/bio.html`        | Edit and push                     |
-| Your photo           | `images/z_me_24-06-10.jpg`  | Replace file                      |
-| Add project          | `_posts/`                   | Create `YYYY-MM-DD-name.markdown` |
-| Colors/fonts         | `_sass/_variables.scss`     | Edit variables                    |
-| HTML structure/style | `_layouts/default.html`     | Only edit for structure changes   |
+| What to Edit         | File                       | Action                            |
+| -------------------- | -------------------------- | --------------------------------- |
+| **Website content**  | **`index.html`**           | **Edit and push (MAIN FILE)**     |
+| Your name            | `_includes/name.html`      | Edit and push                     |
+| Bio text             | `_includes/bio.html`       | Edit and push                     |
+| Your photo           | `images/z_me_24-06-10.jpg` | Replace file                      |
+| Add project          | `_posts/`                  | Create `YYYY-MM-DD-name.markdown` |
+| Colors/fonts         | `_sass/_variables.scss`    | Edit variables                    |
+| HTML structure/style | `_layouts/default.html`    | Only edit for structure changes   |
 
 ### 🚀 Publishing Changes
 
@@ -78,15 +78,15 @@ Edit `_layouts/default.html` (search for "G-E00L9PT3V9")
 
 ### What File Should I Edit?
 
-| What You Want to Change     | Edit This File                    | Location     |
-| --------------------------- | --------------------------------- | ------------ |
-| **Website content/layout**  | **`index.html`**                  | **root**     |
-| Your name                   | `name.html`                       | `_includes/` |
-| Biography text              | `bio.html`                        | `_includes/` |
-| Add new project             | Create `YYYY-MM-DD-name.markdown` | `_posts/`    |
-| Change colors               | `_variables.scss`                 | `_sass/`     |
-| HTML structure/wrapper      | `default.html`                    | `_layouts/`  |
-| Site name/URL               | `_config.yml`                     | root         |
+| What You Want to Change    | Edit This File                    | Location     |
+| -------------------------- | --------------------------------- | ------------ |
+| **Website content/layout** | **`index.html`**                  | **root**     |
+| Your name                  | `name.html`                       | `_includes/` |
+| Biography text             | `bio.html`                        | `_includes/` |
+| Add new project            | Create `YYYY-MM-DD-name.markdown` | `_posts/`    |
+| Change colors              | `_variables.scss`                 | `_sass/`     |
+| HTML structure/wrapper     | `default.html`                    | `_layouts/`  |
+| Site name/URL              | `_config.yml`                     | root         |
 
 ### Complete Structure
 
