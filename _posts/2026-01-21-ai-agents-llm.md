@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Build AI Agents by Augmenting LLMs with Codified Human Expert Domain Knowledge? A Software Engineering Framework"
-date: 2026-01-01 01:00:00 +00:00
+date: 2026-01-21 01:00:00 +00:00
 image: /images/p_llm.png
 categories: research
 author: "Miguel Martins Pacheco"

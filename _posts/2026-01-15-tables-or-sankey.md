@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tables or Sankey Diagrams? Investigating User Interaction with Different Representations of Simulation Parameters"
-date: 2026-01-01 01:00:00 +00:00
+date: 2026-01-15 01:00:00 +00:00
 image: /images/p_sankeys.png
 categories: research
 author: "Miguel Martins Pacheco"
