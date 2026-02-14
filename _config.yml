@@ -17,9 +17,6 @@ avatar: images/z_me2_24-06-10.jpg
 # ----------------------------------------------------------------------------
 # SOCIAL MEDIA LINKS (currently not used in templates, but kept for reference)
 # ----------------------------------------------------------------------------
-# ----------------------------------------------------------------------------
-# SOCIAL MEDIA LINKS (currently not used in templates, but kept for reference)
-# ----------------------------------------------------------------------------
 footer-links:
   dribbble:
   email: mail@martinspacheco.de
@@ -74,7 +71,7 @@ kramdown:
 
 # Sass/SCSS compilation
 sass:
-  style: :compressed  # Minified CSS for faster loading
+  style: compressed  # Minified CSS for faster loading
 
 # Jekyll plugins
 plugins:
