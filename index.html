@@ -88,7 +88,7 @@ layout: default
                 <div class="timeline-text-content">
                   <h3>{{post.title}}</h3>
                   <p>{{post.authors}}</p>
-                  <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+                  <em>{% if post.venue %}{{post.venue}}, {% endif %}{{ post.date | date: "%Y" }}</em>
 
                   <div class="timeline-links">
                     {% if post.doi %}
@@ -154,7 +154,7 @@ layout: default
                 <div class="timeline-text-content">
                   <h3>{{post.title}}</h3>
                   <p>{{post.authors}}</p>
-                  <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+                  <em>{% if post.venue %}{{post.venue}}, {% endif %}{{ post.date | date: "%Y" }}</em>
 
                 <div class="timeline-links">
                   {% if post.doi %}
@@ -218,7 +218,7 @@ layout: default
                 <div class="timeline-text-content">
                   <h3>{{post.title}}</h3>
                   <p>{{post.authors}}</p>
-                  <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+                  <em>{% if post.venue %}{{post.venue}}, {% endif %}{{ post.date | date: "%Y" }}</em>
 
                 <div class="timeline-links">
                   {% if post.doi %}
@@ -284,7 +284,7 @@ layout: default
                 <div class="timeline-text-content">
                   <h3>{{post.title}}</h3>
                   <p>{{post.authors}}</p>
-                  <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+                  <em>{% if post.venue %}{{post.venue}}, {% endif %}{{ post.date | date: "%Y" }}</em>
 
                 <div class="timeline-links">
                   {% if post.doi %}
