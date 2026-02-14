@@ -2,17 +2,35 @@
 
 My personal academic website showcasing research, industry, teaching, and private projects.
 
----
-
-## 📖 Documentation
-
-- **[EDITING_GUIDE.md](EDITING_GUIDE.md)** - Quick reference for common edits
-- **[STRUCTURE.md](STRUCTURE.md)** - Complete repository structure overview
-- This README - Getting started and detailed instructions
+> **📖 For complete repository structure details, see [STRUCTURE.md](STRUCTURE.md)**
 
 ---
 
-## 🚀 Quick Start - Making Changes
+## ⚡ Quick Reference
+
+| What to Edit  | File                        | Action                            |
+| ------------- | --------------------------- | --------------------------------- |
+| Bio text      | `_includes/bio.html`        | Edit and push                     |
+| Your photo    | `images/z_me_24-06-10.jpg`  | Replace file                      |
+| Your name     | `index.html` (line ~48)     | Change `<h1>` text                |
+| Social links  | `index.html` (lines ~80-84) | Edit `<a href>` tags              |
+| Add project   | `_posts/`                   | Create `YYYY-MM-DD-name.markdown` |
+| Colors/fonts  | `_sass/_variables.scss`     | Edit variables                    |
+| Site settings | `_config.yml`               | Edit configuration                |
+
+### 🚀 Publishing Changes
+
+```bash
+git add .
+git commit -m "Describe your changes"
+git push
+```
+
+Wait 2-3 minutes → Hard refresh browser: `Cmd + Shift + R` (Mac) or `Ctrl + Shift + R` (Windows)
+
+---
+
+## 🚀 Common Tasks - Step by Step
 
 ### 1. Update Your Bio
 
@@ -67,9 +85,8 @@ website: "https://..." # optional
 ├── style.scss              # Main stylesheet
 ├── _config.yml             # Site configuration
 │
-├── 📖 README.md            # This file
-├── 📖 EDITING_GUIDE.md     # Quick reference
-├── 📖 STRUCTURE.md         # Complete structure overview
+├── 📖 README.md            # This file - complete guide
+├── 📖 STRUCTURE.md         # Detailed structure reference
 │
 ├── _includes/              # Reusable HTML components
 │   └── bio.html           # Your bio (edit this!)
@@ -134,6 +151,19 @@ git push
 
 # 6. Wait 2-3 minutes, then hard refresh your browser (Cmd + Shift + R)
 ```
+
+---
+
+## ❗ Important Notes
+
+- **Front Matter Required:** HTML files need `---` at the top for Jekyll to process template variables
+- **Image Locations:** Full-size images → `images/`, thumbnails → `tn/images/`
+- **Deploy Time:** Changes take 2-3 minutes to appear on live site
+- **Cache Clearing:** Always hard refresh (`Cmd/Ctrl + Shift + R`) to see updates
+- **Case Sensitive:** File and folder names are case-sensitive on the server
+- **File Naming:** Posts must be named `YYYY-MM-DD-title.markdown`
+
+---
 
 ## 🎨 Customization
 

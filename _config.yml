@@ -9,7 +9,7 @@
 # ----------------------------------------------------------------------------
 
 # Your full name (appears in page title and metadata)
-name: Nuno Miguel Martins Pacheco
+name: Miguel Martins Pacheco
 
 # Profile photo path (relative to root directory)
 avatar: images/z_me2_24-06-10.jpg
@@ -22,7 +22,7 @@ avatar: images/z_me2_24-06-10.jpg
 # ----------------------------------------------------------------------------
 footer-links:
   dribbble:
-  email: nmmp@outlook.de
+  email: mail@martinspacheco.de
   facebook:
   flickr:
   github: martinspacheco
@@ -58,10 +58,6 @@ url: "https://www.martinspacheco.de"
 # JEKYLL CONFIGURATION (don't change unless you know what you're doing)
 # ----------------------------------------------------------------------------
 
-# ----------------------------------------------------------------------------
-# JEKYLL CONFIGURATION (don't change unless you know what you're doing)
-# ----------------------------------------------------------------------------
-
 # Permalink structure (set to / to prevent individual post pages)
 #permalink: /:title/
 permalink: /
@@ -90,7 +86,6 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - EDITING_GUIDE.md
   - STRUCTURE.md
   - command.txt
   - todo.txt

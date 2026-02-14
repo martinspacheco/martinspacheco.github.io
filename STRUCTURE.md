@@ -14,8 +14,7 @@ martinspacheco.github.io/
 ├── 📄 favicon.ico             # Browser tab icon
 ├── 📄 LICENSE                 # Repository license
 │
-├── 📖 README.md               # Complete documentation
-├── 📖 EDITING_GUIDE.md        # Quick reference for common edits
+├── 📖 README.md               # Complete guide - start here!
 ├── 📖 STRUCTURE.md            # This file - repository structure overview
 │
 ├── 🗂️ _includes/              # Reusable HTML components
@@ -272,7 +271,6 @@ martinspacheco.github.io/
 │
 └── 📚 Documentation
     ├── README.md (Complete guide)
-    ├── EDITING_GUIDE.md (Quick reference)
     └── STRUCTURE.md (This file)
 ```
 
@@ -297,8 +295,7 @@ martinspacheco.github.io/
 
 Each folder has its own README with detailed information:
 
-- `/` - [README.md](README.md) - Complete documentation
-- `/` - [EDITING_GUIDE.md](EDITING_GUIDE.md) - Quick reference
+- `/` - [README.md](README.md) - Complete documentation and quick reference
 - `_includes/` - [README.md](_includes/README.md) - HTML components
 - `_layouts/` - [README.md](_layouts/README.md) - Page templates
 - `_posts/` - [README.md](_posts/README.md) - Project entries
@@ -356,7 +353,7 @@ Do you want to change...
 
 ## 🆘 Need Help?
 
-1. Check the specific folder's README
-2. Read [README.md](README.md) for complete documentation
-3. Check [EDITING_GUIDE.md](EDITING_GUIDE.md) for quick reference
+1. Check [README.md](README.md) first - has quick reference and complete guide
+2. Check the specific folder's README for detailed info
+3. Review [STRUCTURE.md](STRUCTURE.md) for repository overview
 4. Review comments in the actual files (all code is commented)
