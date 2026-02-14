@@ -4,16 +4,26 @@ My personal academic website showcasing research, industry, teaching, and privat
 
 ---
 
+## 🎯 Main Content File
+
+**Edit `index.html` to change all website content!**
+
+This is your homepage - bio, social links, project categories, descriptions, etc.  
+The HTML structure/styling is in `_layouts/default.html` (don't edit that for content).
+
+---
+
 ## ⚡ Quick Reference
 
-| What to Edit | File                        | Action                            |
-| ------------ | --------------------------- | --------------------------------- |
-| Your name    | `_includes/name.html`       | Edit and push                     |
-| Bio text     | `_includes/bio.html`        | Edit and push                     |
-| Your photo   | `images/z_me_24-06-10.jpg`  | Replace file                      |
-| Social links | `index.html` (lines ~80-84) | Edit `<a href>` tags              |
-| Add project  | `_posts/`                   | Create `YYYY-MM-DD-name.markdown` |
-| Colors/fonts | `_sass/_variables.scss`     | Edit variables                    |
+| What to Edit         | File                        | Action                            |
+| -------------------- | --------------------------- | --------------------------------- |
+| **Website content**  | **`index.html`**            | **Edit and push (MAIN FILE)**     |
+| Your name            | `_includes/name.html`       | Edit and push                     |
+| Bio text             | `_includes/bio.html`        | Edit and push                     |
+| Your photo           | `images/z_me_24-06-10.jpg`  | Replace file                      |
+| Add project          | `_posts/`                   | Create `YYYY-MM-DD-name.markdown` |
+| Colors/fonts         | `_sass/_variables.scss`     | Edit variables                    |
+| HTML structure/style | `_layouts/default.html`     | Only edit for structure changes   |
 
 ### 🚀 Publishing Changes
 
@@ -60,7 +70,7 @@ Edit `_sass/_variables.scss`
 
 ### Update Google Analytics
 
-Edit `index.html` and `_layouts/default.html` (search for "gtag")
+Edit `_layouts/default.html` (search for "G-E00L9PT3V9")
 
 ---
 
@@ -68,15 +78,15 @@ Edit `index.html` and `_layouts/default.html` (search for "gtag")
 
 ### What File Should I Edit?
 
-| What You Want to Change    | Edit This File                    | Location     |
-| -------------------------- | --------------------------------- | ------------ |
-| Your name                  | `name.html`                       | `_includes/` |
-| Biography text             | `bio.html`                        | `_includes/` |
-| Add new project            | Create `YYYY-MM-DD-name.markdown` | `_posts/`    |
-| Change colors              | `_variables.scss`                 | `_sass/`     |
-| Change homepage layout     | `index.html`                      | root         |
-| Change project page layout | `default.html`                    | `_layouts/`  |
-| Site name/URL              | `_config.yml`                     | root         |
+| What You Want to Change     | Edit This File                    | Location     |
+| --------------------------- | --------------------------------- | ------------ |
+| **Website content/layout**  | **`index.html`**                  | **root**     |
+| Your name                   | `name.html`                       | `_includes/` |
+| Biography text              | `bio.html`                        | `_includes/` |
+| Add new project             | Create `YYYY-MM-DD-name.markdown` | `_posts/`    |
+| Change colors               | `_variables.scss`                 | `_sass/`     |
+| HTML structure/wrapper      | `default.html`                    | `_layouts/`  |
+| Site name/URL               | `_config.yml`                     | root         |
 
 ### Complete Structure
 

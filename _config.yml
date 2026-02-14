@@ -55,9 +55,9 @@ url: "https://www.martinspacheco.de"
 # JEKYLL CONFIGURATION (don't change unless you know what you're doing)
 # ----------------------------------------------------------------------------
 
-# Permalink structure (set to / to prevent individual post pages)
+# Permalink structure for individual posts
+# Note: No permalink setting = index.html is homepage, posts get their own URLs
 #permalink: /:title/
-permalink: /
 
 # Jekyll version info
 version: v1.2.0

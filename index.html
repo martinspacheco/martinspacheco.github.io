@@ -1,89 +1,65 @@
 ---
-# ============================================================================
-# JEKYLL FRONT MATTER
-# This empty front matter (---  ---) tells Jekyll to process this file
-# Without it, Jekyll won't replace {{ variables }} with actual values
-# ============================================================================
+# ╔══════════════════════════════════════════════════════════════════════════╗
+# ║                                                                          ║
+# ║  🎯 EDIT THIS FILE TO CHANGE YOUR WEBSITE CONTENT                       ║
+# ║                                                                          ║
+# ║  This is your MAIN CONTENT FILE - homepage of martinspacheco.de         ║
+# ║                                                                          ║
+# ║  Quick edits:                                                            ║
+# ║  • Your name → Edit _includes/name.html                                  ║
+# ║  • Your bio → Edit _includes/bio.html                                    ║
+# ║  • Category descriptions → Edit <p> text in sections below               ║
+# ║  • Projects → Add/edit files in _posts/ folder                           ║
+# ║  • Social links → Edit <a> tags in Bio section                           ║
+# ║                                                                          ║
+# ║  The HTML structure/styling is in _layouts/default.html                  ║
+# ║                                                                          ║
+# ╚══════════════════════════════════════════════════════════════════════════╝
+layout: default
 ---
-<!DOCTYPE HTML>
-<html lang="en">
 
-<head>
-  
-  <!-- ===================================================================== 
-       GOOGLE ANALYTICS
-       Tracks website visitors. To change ID, edit G-E00L9PT3V9 below
-  ====================================================================== -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-E00L9PT3V9');
-  </script>
-  
-  <!-- ===================================================================== 
-       SITE METADATA
-       {{ site.name }} comes from _config.yml
-  ====================================================================== -->
-  <title>{{ site.name }}</title>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <meta name="author" content="{{ site.name }}" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ===================================================================== 
+     HEADER: Your name
+     TO CHANGE: Edit _includes/name.html
+====================================================================== -->
+<div style="text-align:center; margin-bottom: 3rem; margin-top: 2rem;">
+  <h1>{% include name.html %}</h1>
+</div>
 
-  <!-- ===================================================================== 
-       STYLESHEETS
-  ====================================================================== -->
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- ===================================================================== 
+     MAIN CONTENT CONTAINER
+====================================================================== -->
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tr style="padding:0px">
+    <td style="padding:0px">
+      
+      <!-- =================================================================
+           BIO SECTION: Introduction + Photo
+           Your bio text comes from _includes/bio.html
+           TO CHANGE BIO: Edit _includes/bio.html
+           TO CHANGE PHOTO: Replace images/z_me_24-06-10.jpg
+           TO CHANGE LINKS: Edit the <a> tags below
+      ================================================================= -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tr style="padding:0px">
+          <!-- Left column: Bio text -->
+          <td style="padding:2.5%;width:63%;vertical-align:middle">
+            {% include bio.html %}
+          </td>
+          <!-- Right column: Photo and social links -->
+          <td style="padding:2.5%;width:37%;max-width:37%;vertical-align:middle">
+            <img style="width:100%;max-width:100%;border-radius:1rem;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06)" alt="profile photo" src="images/z_me_24-06-10.jpg">
+          
+          <p style="text-align:center">
+              <a href="mailto:mail@martinspacheco.de">Email</a> &nbsp;/&nbsp;
+              <a href="https://www.linkedin.com/in/martinspacheco/">LinkedIn</a> &nbsp;/&nbsp;
+              <a href="https://github.com/martinspacheco">GitHub</a> &nbsp;/&nbsp;
+              <a href="https://scholar.google.com/citations?user=oP_1xlQAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+              <a href="https://www.researchgate.net/profile/Nuno_Miguel_Martins_Pacheco">ResearchGate</a></p>
 
-</head>
-
-<body>
-  
-  <!-- ===================================================================== 
-       HEADER: Your name
-       TO CHANGE: Edit _includes/name.html
-  ====================================================================== -->
-  <div style="text-align:center; margin-bottom: 3rem; margin-top: 2rem;">
-    <h1>{% include name.html %}</h1>
-  </div>
-
-  <!-- ===================================================================== 
-       MAIN CONTENT CONTAINER
-  ====================================================================== -->
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        
-        <!-- =================================================================
-             BIO SECTION: Introduction + Photo
-             Your bio text comes from _includes/bio.html
-             TO CHANGE BIO: Edit _includes/bio.html
-             TO CHANGE PHOTO: Replace images/z_me_24-06-10.jpg
-             TO CHANGE LINKS: Edit the <a> tags below
-        ================================================================= -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr style="padding:0px">
-            <!-- Left column: Bio text -->
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              {% include bio.html %}
-            </td>
-            <!-- Right column: Photo and social links -->
-            <td style="padding:2.5%;width:37%;max-width:37%;vertical-align:middle">
-              <img style="width:100%;max-width:100%;border-radius:1rem;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06)" alt="profile photo" src="images/z_me_24-06-10.jpg">
-            
-            <p style="text-align:center">
-                <a href="mailto:mail@martinspacheco.de">Email</a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/martinspacheco/">LinkedIn</a> &nbsp;/&nbsp;
-                <a href="https://github.com/martinspacheco">GitHub</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=oP_1xlQAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                <a href="https://www.researchgate.net/profile/Nuno_Miguel_Martins_Pacheco">ResearchGate</a></p>
-
-            </td>
-          </tr>
-        </table>
+          </td>
+        </tr>
+      </table>
 
           <!-- ===============================================================
                RESEARCH PROJECTS SECTION
@@ -344,24 +320,21 @@
           </div>
         </div>
 
-        <br>
-        <br>
-        <br>    
+      <br>
+      <br>
+      <br>    
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a> modified by <a style="font-size:small;" href="https://leonidk.com">Leonid Keselman</a>
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tr>
+          <td style="padding:0px">
+            <br>
+            <p style="text-align:center;font-size:small;">
+              Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a> modified by <a style="font-size:small;" href="https://leonidk.com">Leonid Keselman</a>
 
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</body>
-
-</html>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

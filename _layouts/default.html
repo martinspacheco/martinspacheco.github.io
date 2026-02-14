@@ -1,9 +1,17 @@
-<!-- =========================================================================
-     DEFAULT LAYOUT - Used for individual project pages
-     This file displays projects in a vertical table format (used by post.html)
-     NOTE: Currently this layout shows the same content as index.html
-           due to permalink: / in _config.yml
-========================================================================= -->
+<!-- ╔══════════════════════════════════════════════════════════════════════════╗
+     ║                                                                          ║
+     ║  DEFAULT LAYOUT - HTML Wrapper for All Pages                            ║
+     ║                                                                          ║
+     ║  This file provides the <head>, <body>, and HTML structure.             ║
+     ║  The actual content comes from files that use this layout.              ║
+     ║                                                                          ║
+     ║  ⚠️  DON'T EDIT THIS FILE TO CHANGE CONTENT ⚠️                          ║
+     ║                                                                          ║
+     ║  To change website content → Edit index.html                            ║
+     ║  To change styling → Edit style.scss or _sass/ files                    ║
+     ║  To change Google Analytics → Edit G-E00L9PT3V9 below                   ║
+     ║                                                                          ║
+     ╚══════════════════════════════════════════════════════════════════════════╝ -->
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -15,12 +23,10 @@
   ====================================================================== -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
   <script>
-    
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-E00L9PT3V9');
-
   </script>
   
   <!-- ===================================================================== 
@@ -28,9 +34,7 @@
        {{ site.name }} comes from _config.yml
   ====================================================================== -->
   <title>{{ site.name }}</title>
-
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -46,364 +50,13 @@
 <body>
   
   <!-- ===================================================================== 
-       HEADER: Your name
-       TO CHANGE: Edit _includes/name.html
+       CONTENT FROM OTHER FILES GOES HERE
+       This {{ content }} variable is replaced with:
+       - index.html content (for homepage)
+       - _layouts/post.html content (for project pages)
   ====================================================================== -->
-  <div style="text-align:center; margin-bottom: 3rem; margin-top: 2rem;">
-    <h1>{% include name.html %}</h1>
-  </div>
+  {{ content }}
 
-  <!-- ===================================================================== 
-       MAIN CONTENT CONTAINER
-  ====================================================================== -->
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        
-        <!-- =================================================================
-             BIO SECTION: Introduction + Photo
-             Your bio text comes from _includes/bio.html
-             TO CHANGE BIO: Edit _includes/bio.html
-             TO CHANGE PHOTO: Replace images/z_me_24-06-10.jpg
-             TO CHANGE LINKS: Edit the <a> tags below
-        ================================================================= -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr style="padding:0px">
-            <!-- Left column: Bio text -->
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              {% include bio.html %}
-            </td>
-            <!-- Right column: Photo and social links -->
-            <td style="padding:2.5%;width:37%;max-width:37%;vertical-align:middle">
-              <img style="width:100%;max-width:100%;border-radius:1rem;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06)" alt="profile photo" src="images/z_me_24-06-10.jpg">
-            
-            <p style="text-align:center">
-                <a href="mailto:mail@martinspacheco.de">Email</a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/martinspacheco/">LinkedIn</a> &nbsp;/&nbsp;
-                <a href="https://github.com/martinspacheco">GitHub</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=oP_1xlQAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                <a href="https://www.researchgate.net/profile/Nuno_Miguel_Martins_Pacheco">ResearchGate</a></p>
-
-            </td>
-          </tr>
-        </table>
-
-        <!-- ===============================================================
-             RESEARCH PROJECTS SECTION
-             Shows all posts with category='research' from _posts/ folder
-             TO ADD NEW PROJECT: Create file in _posts/ with category: research
-             Projects displayed in vertical table format (image on left, text on right)
-        =============================================================== -->
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:3rem">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-
-              <h2>Research Projects</h2>
-              <p>
-                I am interested in human-AI collaboration, explainable AI, design education, and prototyping methodologies. My doctoral research investigated how hackathon formats influence product quality and learning outcomes in engineering education, and how structured design processes support novice teams through the fuzzy front-end of development.
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          <!-- Loop through all posts and display only 'research' category -->
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-
-              {% if post.doi %}
-                <a href="{{post.doi}}">doi</a> /
-              {% endif %}
-              {% if post.video %}
-                <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-                <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-                <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-                <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-                <a href="{{post.fullpaper}}">full paper</a> /
-              {% endif %}
-              {% if post.slides %}
-                <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-                <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.website2 %}
-                <a href="{{post.website2}}">website 2</a> /
-              {% endif %}
-              {% if post.youtube %}
-                <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-
-
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
-
-        <!-- ===============================================================
-             INDUSTRY PROJECTS SECTION
-             Shows all posts with category='industry'
-        =============================================================== -->
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Industry Projects</h2>
-              <p>I led development projects and design thinking workshops to create innovative mechatronic solutions, primarily in the automotive sector — spanning concept development, prototyping, and user testing, with a focus on novel applications of emerging technologies.</p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          <!-- Loop through all posts and display only 'industry' category -->
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'industry' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-              <br>
-
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              
-              <br>
-              {% if post.doi %}
-                <a href="{{post.doi}}">doi</a> /
-              {% endif %}
-              {% if post.video %}
-                <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-                <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-                <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-                <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-                <a href="{{post.fullpaper}}">full paper</a> /
-              {% endif %}
-              {% if post.slides %}
-                <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-                <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-                <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
-
-        <!-- ===============================================================
-             TEACHING PROJECTS SECTION
-             Shows all posts with category='teaching'
-        =============================================================== -->
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Teaching Projects</h2>
-              <p> I led hackathon formats and mentored students through the full development process — from ideation to implementation — on real-world challenges involving emerging technologies.
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          <!-- Loop through all posts and display only 'teaching' category -->
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'teaching' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-              <br>
-              
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-
-              <br>
-              {% if post.doi %}
-                <a href="{{post.doi}}">doi</a> /
-              {% endif %}
-              {% if post.video %}
-                <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-                <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-                <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-                <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-                <a href="{{post.fullpaper}}">full paper</a> /
-              {% endif %}
-              {% if post.slides %}
-                <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-                <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-                <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br> 
-
-        <!-- ===============================================================
-             PRIVATE PROJECTS SECTION
-             Shows all posts that don't match research, industry, or teaching
-        =============================================================== -->
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Private Projects</h2>
-              <p>
-                A selection of side projects driven by curiosity and hands-on experimentation.
-
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0 px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          <!-- Loop through posts and display non-categorized projects -->
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat != 'research' and cat != 'industry' and cat != 'teaching' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.doi %}
-                <a href="{{post.doi}}">doi</a> /
-              {% endif %}
-              {% if post.video %}
-                <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-                <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-                <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-                <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-                <a href="{{post.fullpaper}}">full paper</a> /
-              {% endif %}
-              {% if post.slides %}
-                <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-                <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-                <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>  
-      
-
-        <br>
-        <br>
-        <br>    
-
-        <!-- ===============================================================
-             FOOTER: Credit to original designers
-        =============================================================== -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a> modified by <a style="font-size:small;" href="https://leonidk.com">Leonid Keselman</a>
-
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
 </body>
 
 </html>
-
