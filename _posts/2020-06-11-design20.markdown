@@ -3,7 +3,7 @@ layout: post
 title: "Fostering Prototyping Mindsets in Novice Designers with the Prototyping Planner"
 date: 2020-06-11 01:00:00 +00:00
 image: /images/r_design20.jpg
-categories: research
+categories: publications-talks-patents
 author: "Nuno Miguel Martins Pacheco"
 venue: "Proceedings of the International Design Conference"
 authors: "Camilla Arndt Hansen, Lasse Skovgaard Jensen, Ali Gürcan Özkil and <strong>Nuno Miguel Martins Pacheco</strong>"

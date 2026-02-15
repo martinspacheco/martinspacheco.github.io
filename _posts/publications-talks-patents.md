@@ -1,0 +1,43 @@
+---
+layout: page
+title: "Publications, Talks & Patents"
+permalink: /publications-talks-patents/
+---
+
+## Publications
+
+| Year | Type           | Title                                                                                                                                                                 | Venue                           | Authors                      | Tags                             | Link                                                                                                                                     |
+| ---- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ---------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026 | `Preprint`     | How to Build AI Agents by Augmenting LLMs with Codified Human Expert Domain Knowledge? A Software Engineering Framework                                               | ArXiv                           | Ulan uulu et al.             | `AI` `UX`                        | [↗](https://arxiv.org/abs/2601.15153)                                                                                                    |
+| 2026 | `Preprint`     | Tables or Sankey Diagrams? Investigating User Interaction with Different Representations of Simulation Parameters                                                     | ArXiv                           | Ulan uulu et al.             | `AI` `UX` `HCI`                  | [↗](https://arxiv.org/abs/2601.10232)                                                                                                    |
+| 2025 | `Preprint`     | User eXperience Perception Insights Dataset (UXPID): Synthetic User Feedback from Public Industrial Forums                                                            | ArXiv                           | Kulyabin et al.              | `AI` `UX` `Dataset`              | [↗](https://arxiv.org/abs/2509.11777)                                                                                                    |
+| 2025 | `Conference`   | AI for Better UX in Computer-Aided Engineering: Is Academia Catching Up with Industry Demands? A Multivocal Literature Review                                         | Springer Nature                 | Ulan Uulu et al.             | `AI` `UX`                        | [↗](https://link.springer.com/chapter/10.1007/978-3-032-04200-2_20)                                                                      |
+| 2024 | `Dissertation` | A hackathon approach for design education to enable quantitative analysis of effort spent, product concept quality, and learning effect in technical higher education | TU Munich                       | Martins Pacheco              | `Design Education` `Prototyping` | [↗](https://mediatum.ub.tum.de/1744037)                                                                                                  |
+| 2024 | `Conference`   | Do Methods Work? On the Correlation of Method Application, Effort, and Product Quality                                                                                | NordDesign 2024                 | Hohnbaum et al.              | `Design Education` `Prototyping` | [↗](https://www.designsociety.org/publication/47628/do_methods_work_on_the_correlation_of_method_application_effort_and_product_quality) |
+| 2024 | `Journal`      | Learning by doing? The relationship between effort, learning effect and product quality during hackathons of novice teams                                             | Design Science Journal          | Martins Pacheco et al.       | `Design Education` `Prototyping` | [↗](https://doi.org/10.1017/dsj.2024.9)                                                                                                  |
+| 2022 | `Conference`   | Challenges and Opportunities in Remote Prototyping: A Case-Study during COVID-19                                                                                      | International Design Conference | Martins Pacheco et al.       | `Prototyping` `HCI`              | [↗](https://doi.org/10.1017/pds.2022.25)                                                                                                 |
+| 2022 | `Conference`   | Design of an Autonomous Trash-Picking Service Robot Focussed on Human-Robot Interaction                                                                               | International Design Conference | Vazhapilli Sureshbabu et al. | `HCI` `Prototyping`              | [↗](https://doi.org/10.1017/pds.2022.255)                                                                                                |
+| 2021 | `Conference`   | A Fuzzy Front-End Product Development Framework for Startups                                                                                                          | ICED 2021                       | Martins Pacheco et al.       | `Prototyping` `Design Education` | [↗](https://doi.org/10.1017/pds.2021.12)                                                                                                 |
+| 2021 | `Conference`   | What is successful prototyping? Insights from Novice Designers' Self-Evaluation of Prototyping Success                                                                | ICED 2021                       | Hansen et al.                | `Prototyping` `Design Education` | [↗](https://doi.org/10.1017/pds.2021.604)                                                                                                |
+| 2021 | `Conference`   | A Role-Based Prototyping Approach for Human-Centered Design in Industry                                                                                               | ICRD 2021                       | Martins Pacheco et al.       | `Prototyping` `HCI`              | [↗](https://doi.org/10.1007/978-981-16-0119-4_75)                                                                                        |
+| 2020 | `Conference`   | A Behavior-Centric Concept for Engineering Education in New Product Development                                                                                       | NordDesign 2020                 | Behrenbeck et al.            | `Design Education`               | [↗](https://doi.org/10.35199/NORDDESIGN2020.25)                                                                                          |
+| 2020 | `Conference`   | A Role-based Prototyping Approach for Human-Centred Design in Fuzzy Front-End Scenarios                                                                               | NordDesign 2020                 | Martins Pacheco et al.       | `Prototyping` `Design Education` | [↗](https://doi.org/10.35199/NORDDESIGN2020.7)                                                                                           |
+| 2020 | `Conference`   | Fostering Prototyping Mindsets in Novice Designers with the Prototyping Planner                                                                                       | International Design Conference | Hansen et al.                | `Prototyping` `Design Education` | [↗](https://doi.org/10.1017/dsd.2020.132)                                                                                                |
+
+---
+
+## Talks
+
+| Year | Title                                                                                         | Venue                                                                         | Tags            |
+| ---- | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------- |
+| 2025 | Agentic UX in Industrial Settings                                                             | Bitkom — Arbeitskreis Digital User Experience & Design                        | `AI` `UX` `HCI` |
+| 2025 | Everyone's Talking About Agents: Elevating UX to Transform Human-AI Collaboration in Industry | Data Analytics and Artificial Intelligence 2025 — Internal Siemens Conference | `AI` `UX` `HCI` |
+| 2025 | Agentive UX in Industrial Settings                                                            | UX@Siemens 2025 — Internal Siemens Conference                                 | `AI` `UX`       |
+
+---
+
+## Patents
+
+| Year | Title | Status | Tags |
+| ---- | ----- | ------ | ---- |
+| TBD  | —     | —      | —    |

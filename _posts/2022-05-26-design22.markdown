@@ -3,7 +3,7 @@ layout: post
 title: "Design of an Autonomous Trash-Picking Service Robot Focussed on Human-Robot Interaction"
 date: 2022-05-26 01:00:00 +00:00
 image: /images/r_design2022.jpg
-categories: research
+categories: publications-talks-patents
 author: "Nuno Miguel Martins Pacheco"
 venue: "Proceedings of the International Design Conference"
 authors: "Anand Vazhapilli Sureshbabu, <strong>Nuno Miguel Martins Pacheco</strong>, Laura Isabel Durán Noy and Markus Zimmermann"

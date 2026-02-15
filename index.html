@@ -62,16 +62,25 @@ layout: default
       </table>
 
           <!-- ===============================================================
-               RESEARCH PROJECTS SECTION
-               Shows all posts with category='research' from _posts/ folder
-               TO ADD NEW PROJECT: Create a new file in _posts/ with category: research
+               NAVIGATION
+          =============================================================== -->
+        <div class="nav-container" style="width:100%;max-width:1200px;margin:0 auto 2rem;text-align:center;">
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#teaching" class="nav-link">Teaching</a>
+          <a href="#private" class="nav-link">Private</a>
+          <a href="/publications-talks-patents/" class="nav-link">Publications, Talks &amp; Patents</a>
+        </div>
+
+          <!-- ===============================================================
+               PROJECTS SECTION
+               Shows all posts with category='projects' from _posts/ folder
           =============================================================== -->
 
-        <div style="width:100%;max-width:1200px;margin:3rem auto 0;">
+        <div id="projects" style="width:100%;max-width:1200px;margin:3rem auto 0;">
           <div class="timeline-section-header">
-            <h2>Research Projects</h2>
+            <h2>Projects</h2>
             <p>
-              I am interested in human-AI collaboration, explainable AI, design education, and prototyping methodologies. My doctoral research investigated how hackathon formats influence product quality and learning outcomes in engineering education, and how structured design processes support novice teams through the fuzzy front-end of development.
+              I led development projects and design thinking workshops to create innovative mechatronic solutions, primarily in the automotive sector — spanning concept development, prototyping, and user testing, with a focus on novel applications of emerging technologies.
             </p>
           </div>
 
@@ -80,7 +89,7 @@ layout: default
 
             {% for post in site.posts %}
             {% for cat in post.categories %}
-            {% if cat == 'research' %}
+            {% if cat == 'projects' %}
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-content">
@@ -133,76 +142,12 @@ layout: default
           </div>
         </div>
 
-        <!-- industry projects -->
-
-        <div style="width:100%;max-width:1200px;margin:3rem auto 0;">
-          <div class="timeline-section-header">
-            <h2>Industry Projects</h2>
-            <p>I led development projects and design thinking workshops to create innovative mechatronic solutions, primarily in the automotive sector — spanning concept development, prototyping, and user testing, with a focus on novel applications of emerging technologies.</p>
-          </div>
-
-          <div class="timeline-container">
-            <div class="timeline-line"></div>
-
-            {% for post in site.posts %}
-            {% for cat in post.categories %}
-            {% if cat == 'industry' %}
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <img class="timeline-image" src="/tn{{post.image}}" alt="{{post.title}}" />
-                <div class="timeline-text-content">
-                  <h3>{{post.title}}</h3>
-                  <p>{{post.authors}}</p>
-                  <em>{% if post.venue %}{{post.venue}}, {% endif %}{{ post.date | date: "%Y" }}</em>
-
-                <div class="timeline-links">
-                  {% if post.doi %}
-                    <a href="{{post.doi}}">doi</a>
-                  {% endif %}
-                  {% if post.video %}
-                    <a href="{{post.video}}">video</a>
-                  {% endif %}
-                  {% if post.video2 %}
-                    <a href="{{post.video2}}">video #2</a>
-                  {% endif %}
-                  {% if post.code %}
-                    <a href="{{post.code}}">code</a>
-                  {% endif %}
-                  {% if post.poster %}
-                    <a href="{{post.poster}}">poster</a>
-                  {% endif %}
-                  {% if post.slides %}
-                    <a href="{{post.fullpaper}}">full paper</a>
-                  {% endif %}
-                  {% if post.slides %}
-                    <a href="{{post.slides}}">slides</a>
-                  {% endif %}
-                  {% if post.website %}
-                    <a href="{{post.website}}">website</a>
-                  {% endif %}
-                  {% if post.youtube %}
-                    <a href="{{post.youtube}}">youtube</a>
-                  {% endif %}
-                </div>
-
-                <p>{{ post.excerpt }}</p>
-                </div>
-              </div>
-            </div>
-            {% endif %}
-            {% endfor %}
-            {% endfor %}
-          </div>
-        </div>
-
         <!-- teaching projects -->
 
-        <div style="width:100%;max-width:1200px;margin:3rem auto 0;">
+        <div id="teaching" style="width:100%;max-width:1200px;margin:3rem auto 0;">
           <div class="timeline-section-header">
-            <h2>Teaching Projects</h2>
-            <p> I led hackathon formats and mentored students through the full development process — from ideation to implementation — on real-world challenges involving emerging technologies.
-            </p>
+            <h2>Teaching</h2>
+            <p>I led hackathon formats and mentored students through the full development process — from ideation to implementation — on real-world challenges involving emerging technologies.</p>
           </div>
 
           <div class="timeline-container">
@@ -262,12 +207,11 @@ layout: default
 
         <!-- private projects -->
 
-        <div style="width:100%;max-width:1200px;margin:3rem auto 0;">
+        <div id="private" style="width:100%;max-width:1200px;margin:3rem auto 0;">
           <div class="timeline-section-header">
-            <h2>Private Projects</h2>
+            <h2>Private</h2>
             <p>
               A selection of side projects driven by curiosity and hands-on experimentation.
-
             </p>
           </div>
 
@@ -276,7 +220,7 @@ layout: default
 
             {% for post in site.posts %}
             {% for cat in post.categories %}
-            {% if cat != 'research' and cat != 'industry' and cat != 'teaching' %}
+            {% if cat == 'private' %}
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-content">
@@ -323,6 +267,20 @@ layout: default
             {% endif %}
             {% endfor %}
             {% endfor %}
+          </div>
+        </div>
+
+        <!-- publications, talks & patents -->
+
+        <div id="publications-talks-patents" style="width:100%;max-width:1200px;margin:3rem auto 0;">
+          <div class="timeline-section-header">
+            <h2>Publications, Talks &amp; Patents</h2>
+            <p>
+              A full list of my academic publications, conference talks, and patent filings.
+            </p>
+            <p style="margin-top:1rem;">
+              <a href="/publications-talks-patents/" style="padding:0.5rem 1.25rem;background:linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);color:white;border-radius:6px;border:none;font-weight:500;display:inline-block;">View full list →</a>
+            </p>
           </div>
         </div>
 

@@ -22,7 +22,7 @@ layout: post
 title: "Your Project Title"
 date: 2024-01-15
 image: /images/project-image.jpg
-categories: research # Options: research, industry, teaching, (other)
+categories: projects # Options: projects, teaching, private, publications-talks-patents
 authors: "Your Name, Collaborator Names"
 venue: "Conference Name or Journal"
 excerpt: "Short description that appears on the homepage (1-2 sentences)"

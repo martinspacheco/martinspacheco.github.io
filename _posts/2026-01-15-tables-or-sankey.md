@@ -3,7 +3,7 @@ layout: post
 title: "Tables or Sankey Diagrams? Investigating User Interaction with Different Representations of Simulation Parameters"
 date: 2026-01-15 01:00:00 +00:00
 image: /images/p_sankeys.png
-categories: research
+categories: publications-talks-patents
 author: "Miguel Martins Pacheco"
 venue: "ArXiv"
 authors: "Choro Ulan uulu, Mikhail Kulyabin, Katharina M Zeiner, Jan Joosten, <strong>Nuno Miguel Martins Pacheco</strong>, Filippos Petridis, Rebecca Johnson, Jan Bosch, Helena Holmström Olsson"

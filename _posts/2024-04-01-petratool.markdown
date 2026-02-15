@@ -3,7 +3,7 @@ layout: post
 title: "PETRA SPA (Single Page Application) - Design support for innovative mechatronic product development"
 date: 2024-04-01 01:00:00 +00:00
 image: /images/r_petratool.jpg
-categories: research
+categories: projects
 author: "Nuno Miguel Martins Pacheco"
 authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Anand Vazhapilli Sureshbabu, Markus Zimmermann, Laura Isabel Durán Noy, Masaru Charles Nürnberger, Andreas Feldl"
 venue: "Research tool for data collection"

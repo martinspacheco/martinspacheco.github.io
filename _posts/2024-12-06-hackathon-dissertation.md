@@ -3,7 +3,7 @@ layout: post
 title: "A hackathon approach for design education to enable quantitative analysis of effort spent, product concept quality, and learning effect in technical higher education"
 date: 2024-12-06 01:00:00 +00:00
 image: /images/p_diss.png
-categories: research
+categories: publications-talks-patents
 author: "Miguel Martins Pacheco"
 venue: "Technical University of Munich"
 authors: "<strong>Miguel Martins Pacheco</strong>"
