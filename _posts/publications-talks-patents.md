@@ -32,7 +32,7 @@ permalink: /publications-talks-patents/
 | ---- | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------- |
 | 2025 | Agentic UX in Industrial Settings                                                             | Bitkom — Arbeitskreis Digital User Experience & Design                        | `AI` `UX` `HCI` |
 | 2025 | Everyone's Talking About Agents: Elevating UX to Transform Human-AI Collaboration in Industry | Data Analytics and Artificial Intelligence 2025 — Internal Siemens Conference | `AI` `UX` `HCI` |
-| 2025 | Agentive UX in Industrial Settings                                                            | UX@Siemens 2025 — Internal Siemens Conference                                 | `AI` `UX`       |
+| 2025 | Agentic UX in Industrial Settings                                                            | UX@Siemens 2025 — Internal Siemens Conference                                 | `AI` `UX`       |
 
 ---
 
