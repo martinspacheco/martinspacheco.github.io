@@ -7,7 +7,7 @@ categories: projects
 author: "Nuno Miguel Martins Pacheco"
 authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Anand Vazhapilli Sureshbabu, Markus Zimmermann, Laura Isabel Durán Noy, Masaru Charles Nürnberger, Andreas Feldl"
 venue: "Research tool for data collection"
-code: https://gitfront.io/r/martinspacheco/rNsFbMc4fRVb/petra-tool/
+# code: https://gitfront.io/r/martinspacheco/rNsFbMc4fRVb/petra-tool/
 ---
 
 A web-based design support tool helping novice teams navigate the prototyping journey from idea to product concept. Built around an adapted double diamond approach with structured project cycles, it reduces complexity for early-stage teams in mechatronic product development.
