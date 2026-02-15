@@ -442,6 +442,7 @@ td:first-child {
 
 /* Publications tables (inline on homepage) */
 .pub-tables-container {
+  width: 100%;
   max-width: 900px;
   margin: 0 auto;
   background: var(--color-bg-elevated);
