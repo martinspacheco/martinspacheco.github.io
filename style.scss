@@ -442,11 +442,21 @@ td:first-child {
 
 /* Publications tables (inline on homepage) */
 .pub-tables-container {
+  max-width: 900px;
+  margin: 0 auto;
   background: var(--color-bg-elevated);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-md);
   border: 1px solid var(--color-border);
-  padding: 1.5rem 2rem 2rem;
+  padding: 2rem 2.5rem;
+  transition: all 0.3s ease;
+  overflow-x: auto;
+}
+
+.pub-tables-container:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-accent-light);
 }
 
 .pub-table {
@@ -461,6 +471,7 @@ td:first-child {
   text-align: left;
   border-bottom: 1px solid var(--color-border);
   font-size: 0.9rem;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.5;
   vertical-align: top;
 }
@@ -478,13 +489,32 @@ td:first-child {
   background: var(--color-bg-subtle);
 }
 
-.pub-table code {
+/* Tag pills */
+.pill {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
   background: rgba(99, 102, 241, 0.08);
   color: var(--color-accent);
-  padding: 0.15rem 0.45rem;
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  white-space: nowrap;
+  line-height: 1.6;
+  margin: 1px 0;
+}
+
+/* Publication type badge */
+.pub-type {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  background: var(--color-bg-subtle);
+  color: var(--color-text-secondary);
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: 500;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   white-space: nowrap;
 }
 
@@ -540,13 +570,26 @@ td:first-child {
   }
 
   .pub-tables-container {
-    padding: 1rem;
+    padding: 1.25rem;
+  }
+
+  .pub-tables-container:hover {
+    transform: none;
   }
 
   .pub-table th,
   .pub-table td {
     padding: 0.4rem 0.5rem !important;
     font-size: 0.8rem;
+  }
+
+  .pill {
+    font-size: 0.65rem;
+    padding: 0.1rem 0.45rem;
+  }
+
+  .pub-type {
+    font-size: 0.7rem;
   }
 }
 
