@@ -3,7 +3,7 @@ layout: post
 title: "Moving space - Development of a VR sports concept for commuters"
 date: 2020-06-01 01:00:00 +00:00
 image: /images/i_movingspace.jpg
-categories: projects
+categories: teaching
 author: "Nuno Miguel Martins Pacheco"
 authors: "<strong>Nuno Miguel Martins Pacheco</strong>, Annette Böhmer, Michael Schraut, Maximilian Berger, Julian Gesell, Christopher Heiduk, Christian Röttger, Moritz Neuberger"
 venue: "Nine-month development project"

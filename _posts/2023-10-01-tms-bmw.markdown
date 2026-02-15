@@ -3,7 +3,7 @@ layout: post
 title: "THINK.MAKE.START. by BMW Group - Internal design sprint to foster innovation through cross-functional collaboration"
 date: 2023-10-01 01:00:00 +00:00
 image: /images/i_tms.jpg
-categories: teaching
+categories: projects
 author: "Nuno Miguel Martins Pacheco"
 authors: "Annette Böhmer, <strong>Nuno Miguel Martins Pacheco</strong>, Maximilian Bandle"
 venue: "Internal design sprints"
