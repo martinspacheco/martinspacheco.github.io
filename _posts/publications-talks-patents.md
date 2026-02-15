@@ -6,9 +6,9 @@ permalink: /publications-talks-patents/
 
 ## Publications
 
-| Year | Type           | Title                                                                                                                                                                 | Venue                           | Authors                      | Tags                             | Link                                                                                                                                     |
-| ---- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ---------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| 2026 | `Preprint`     | How to Build AI Agents by Augmenting LLMs with Codified Human Expert Domain Knowledge? A Software Engineering Framework                                               | ArXiv                           | Ulan Uulu et al.             | `AI` `UX` `HCI`                        | [View](https://arxiv.org/abs/2601.15153)                                                                                                    |
+| Year | Type           | Title                                                                                                                                                                 | Venue                           | Authors                      | Tags                             | Link                                                                                                                                        |
+| ---- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ---------------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026 | `Preprint`     | How to Build AI Agents by Augmenting LLMs with Codified Human Expert Domain Knowledge? A Software Engineering Framework                                               | ArXiv                           | Ulan Uulu et al.             | `AI` `UX` `HCI`                  | [View](https://arxiv.org/abs/2601.15153)                                                                                                    |
 | 2026 | `Preprint`     | Tables or Sankey Diagrams? Investigating User Interaction with Different Representations of Simulation Parameters                                                     | ArXiv                           | Ulan Uulu et al.             | `AI` `UX` `HCI`                  | [View](https://arxiv.org/abs/2601.10232)                                                                                                    |
 | 2025 | `Preprint`     | User eXperience Perception Insights Dataset (UXPID): Synthetic User Feedback from Public Industrial Forums                                                            | ArXiv                           | Kulyabin et al.              | `AI` `UX` `Dataset`              | [View](https://arxiv.org/abs/2509.11777)                                                                                                    |
 | 2025 | `Conference`   | AI for Better UX in Computer-Aided Engineering: Is Academia Catching Up with Industry Demands? A Multivocal Literature Review                                         | Springer Nature                 | Ulan Uulu et al.             | `AI` `UX`                        | [View](https://link.springer.com/chapter/10.1007/978-3-032-04200-2_20)                                                                      |
@@ -36,8 +36,8 @@ permalink: /publications-talks-patents/
 
 ---
 
-## Patents
+<!-- ## Patents
 
 | Year | Title | Status | Tags |
 | ---- | ----- | ------ | ---- |
-| TBD  | —     | —      | —    |
+| TBD  | —     | —      | —    | -->
