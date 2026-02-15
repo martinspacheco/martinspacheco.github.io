@@ -519,12 +519,16 @@ td:first-child {
 
 /* Responsive */
 @media (max-width: 768px) {
+
+  /* ---- Typography ---- */
   h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    margin: 1.5rem 0 2rem;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    padding: 0.4rem 1rem;
   }
 
   h3 {
@@ -535,51 +539,148 @@ td:first-child {
     font-size: 15px;
   }
 
-  td {
-    padding: 1rem !important;
+  /* ---- Bio section: stack columns vertically ---- */
+  /* Make bio table cells stack on mobile */
+  table[style*="margin-bottom:3rem"] tr,
+  table[style*="margin-bottom:3rem"] td {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0.5rem 1rem !important;
   }
 
-  .timeline-content {
-    flex-direction: column;
-    padding: 1.5rem;
+  table[style*="margin-bottom:3rem"] td img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  table[style*="margin-bottom:3rem"] td p {
+    text-align: center;
+  }
+
+  /* ---- Overall container ---- */
+  td {
+    padding: 0.75rem !important;
+  }
+
+  td:first-child {
+    padding-right: 0.75rem !important;
+  }
+
+  /* ---- Section headers ---- */
+  .timeline-section-header {
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem 1rem;
   }
 
   .timeline-section-header p {
     max-width: 100%;
+    font-size: 0.95rem;
+    padding: 0;
+  }
+
+  /* ---- Navigation ---- */
+  .nav-container {
+    gap: 0.4rem;
+    padding: 0 0.5rem;
+  }
+
+  .nav-link {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.8rem;
+  }
+
+  /* ---- Timeline / post cards ---- */
+  .timeline-container {
+    gap: 1.25rem;
+    padding: 0.5rem 0;
+  }
+
+  .timeline-item {
+    max-width: 100%;
+  }
+
+  .timeline-content {
+    flex-direction: column;
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .timeline-content:hover {
+    transform: none;
   }
 
   .timeline-image {
     width: 100%;
-    max-width: 300px;
+    max-width: 100%;
   }
 
-  .nav-container {
-    gap: 0.5rem;
-  }
-
-  .nav-link {
-    padding: 0.4rem 0.75rem;
-    font-size: 0.85rem;
-  }
-
-  .page-content table th,
-  .page-content table td {
-    padding: 0.5rem 0.5rem !important;
-    font-size: 0.85rem;
-  }
-
+  /* ---- Publications tables ---- */
   .pub-tables-container {
-    padding: 1.25rem;
+    padding: 1rem;
+    border-radius: var(--border-radius);
   }
 
   .pub-tables-container:hover {
     transform: none;
   }
 
-  .pub-table th,
+  .pub-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pub-table thead {
+    display: none;
+  }
+
+  .pub-table tbody {
+    display: block;
+  }
+
+  .pub-table tr {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border);
+    gap: 0.25rem;
+  }
+
   .pub-table td {
-    padding: 0.4rem 0.5rem !important;
+    display: block;
+    border-bottom: none !important;
+    padding: 0.15rem 0.25rem !important;
+    font-size: 0.85rem;
+  }
+
+  /* Publications table: Year | Type on first line, Title full width, Authors, Tags, Link */
+  .pub-table td:nth-child(1) { /* Year */
+    font-weight: 700;
     font-size: 0.8rem;
+    color: var(--color-text-secondary);
+  }
+
+  .pub-table td:nth-child(3) { /* Title */
+    width: 100%;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .pub-table td:nth-child(4) { /* Authors */
+    width: 100%;
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+  }
+
+  .pub-table td:nth-child(5) { /* Tags */
+    width: 100%;
+  }
+
+  .pub-table td:nth-child(6) { /* Link */
+    width: auto;
   }
 
   .pill {
@@ -589,6 +690,18 @@ td:first-child {
 
   .pub-type {
     font-size: 0.7rem;
+  }
+
+  .page-content table th,
+  .page-content table td {
+    padding: 0.5rem 0.5rem !important;
+    font-size: 0.85rem;
+  }
+
+  /* ---- Footer ---- */
+  div[style*="border-top:1px solid #e5e7eb"] {
+    margin: 2rem auto 1.5rem !important;
+    padding: 1rem 0 !important;
   }
 }
 
