@@ -10,6 +10,13 @@
 //@import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
+// Box-sizing reset (kept independent of the Meyer reset above, which is
+// disabled): the layout throughout this file assumes padding is included
+// in percentage/fixed widths, so border-box must always be in effect.
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /**************/
 /* MODERN PROFESSIONAL DESIGN SYSTEM */
 /**************/
